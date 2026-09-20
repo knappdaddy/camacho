@@ -146,17 +146,13 @@ def scene(path, w, h, tone, seed, label=None, tag=None, caption="REPLACE WITH PH
 
 PROJECTS = [
     ("hillside-kitchen", "Kitchen Gut & Rebuild"),
-    ("cedar-deck", "Two-Level Cedar Deck"),
     ("basement-mold", "Basement Mold Remediation"),
+    ("cedar-deck", "Two-Level Cedar Deck"),
+    ("backyard-transform", "Backyard Regrade & Patio"),
     ("burst-pipe", "Burst Pipe Water Mitigation"),
     ("victorian-lead", "Lead Paint Abatement"),
-    ("backyard-transform", "Backyard Regrade & Patio"),
-    ("primary-bath", "Primary Bath Renovation"),
-    ("front-yard", "Front Yard Curb Appeal"),
     ("siding-roof", "Siding & Roof Replacement"),
-    ("crawlspace", "Crawlspace Encapsulation"),
     ("basement-finish", "Finished Basement"),
-    ("screened-porch", "Screened Porch Addition"),
 ]
 
 for slug, title in PROJECTS:
@@ -184,7 +180,6 @@ scene(IMG / "site" / "band-process.svg", 2400, 1200, "airy", "bandproc", "Crew A
 scene(IMG / "site" / "band-quote.svg", 2400, 1200, "deep", "bandquote", "Finished Interior")
 scene(IMG / "site" / "head-services.svg", 2400, 1100, "airy", "headsvc", "Services Header")
 scene(IMG / "site" / "head-projects.svg", 2400, 1100, "airy", "headproj", "Gallery Header")
-scene(IMG / "site" / "head-about.svg", 2400, 1100, "airy", "headabout", "About Header")
 scene(IMG / "site" / "head-contact.svg", 2400, 1100, "airy", "headcontact", "Contact Header")
 
 # Featured before/after on the homepage.
@@ -192,7 +187,6 @@ scene(IMG / "site" / "hero-before.svg", 1600, 1067, "before", "featb", "Featured
 scene(IMG / "site" / "hero-after.svg", 1600, 1067, "after", "feata", "Featured Project", "AFTER")
 
 # About page imagery.
-scene(IMG / "site" / "about-team.svg", 1600, 1200, "light", "aboutteam", "Team Photograph")
 scene(IMG / "site" / "about-jobsite.svg", 1200, 1500, "deep", "aboutjob", "Jobsite Photograph")
 scene(IMG / "site" / "about-wide.svg", 2400, 1200, "airy", "aboutwide", "Wide Jobsite Photograph")
 

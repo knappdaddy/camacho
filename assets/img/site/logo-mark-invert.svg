@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="American Restoration Tech">
-  <path d="M24 4 42 9.5V25c0 9.5-7.6 16.6-18 19.5C13.6 41.6 6 34.5 6 25V9.5z" fill="#111820"/>
-  <path d="M24 12.8 33.6 35.2h-5.3L24 24.2l-4.3 11h-5.3z" fill="#FFFFFF"/>
+  <path d="M24 4 42 9.5V25c0 9.5-7.6 16.6-18 19.5C13.6 41.6 6 34.5 6 25V9.5z" fill="#FFFFFF"/>
+  <path d="M24 12.8 33.6 35.2h-5.3L24 24.2l-4.3 11h-5.3z" fill="#0E1318"/>
   <rect x="17.6" y="28.4" width="12.8" height="3.2" fill="#E2743B"/>
 </svg>

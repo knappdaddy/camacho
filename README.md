@@ -28,13 +28,15 @@ the site just falls back to system fonts, so don't judge the typography that way
 
 | File | What it's for |
 |---|---|
-| `index.html` | Homepage — hero comparison, services, featured before/afters, stats, process, reviews |
-| `services.html` | Eight services in detail, each with its own before/after and scope list |
-| `projects.html` | Full gallery — 12 projects, filterable by service |
-| `about.html` | Company story, differentiators, credentials, track record |
-| `contact.html` | Contact details, estimate request form, FAQ |
+| `index.html` | Homepage — hero, featured before/after, eight service tiles, emergency band, project gallery, process, credentials, reviews |
+| `services.html` | All eight services, one compact card each |
+| `projects.html` | Before/after gallery — eight projects, filterable by service |
+| `contact.html` | Contact details, estimate form, FAQ |
 
----
+There is deliberately **no About page**. Everything it carried — licensed and
+insured, certifications, years in business, how the crew works — now lives on
+the homepage where people actually see it. If you want one back later, the
+pattern to copy is `services.html`.
 
 ## Replacing the placeholder photos
 
@@ -47,14 +49,14 @@ good as the photos you put in it.
 
 | Where | Files | Crop | What to shoot |
 |---|---|---|---|
-| Homepage hero | `site/hero-bg.svg` | very wide, ~16:10 | Your best finished space or a crew shot. Needs room on the **right** — the left side sits under a dark scrim for the headline. |
+| Homepage hero | `site/hero-bg.svg` | very wide, ~16:10 | Your best finished space or a crew shot. Needs room on the **right** — the left sits under a dark scrim for the headline. |
 | Featured comparison | `site/hero-before.svg`, `site/hero-after.svg` | 3:2 | Your single most dramatic transformation. |
-| Service tiles (×8) | `site/tile-*.svg` | **portrait 4:5** | One strong image per service. Text sits over the bottom third, so keep that area simple. |
-| Section bands | `site/band-process.svg`, `site/band-quote.svg`, `site/about-wide.svg` | wide, ~2:1 | Crew working, a finished interior, a job site. |
-| Page headers | `site/head-services.svg`, `head-projects.svg`, `head-about.svg`, `head-contact.svg` | wide, ~2:1 | Anything representative — these sit under a heavy scrim. |
+| Service images (×8) | `site/tile-*.svg` | **portrait 4:5** | One per service. Used tall on the homepage and cropped to 3:2 on the services page, so keep the subject centred. |
+| Section bands | `site/band-process.svg`, `band-quote.svg`, `about-wide.svg` | wide, ~2:1 | Crew working, a finished interior, a job site. |
+| Page headers | `site/head-services.svg`, `head-projects.svg`, `head-contact.svg` | wide, ~2:1 | Anything representative — these sit under a heavy scrim. |
 | Call-to-action | `site/cta-bg.svg` | wide, ~2.4:1 | A warm finished space. |
-| About page | `site/about-team.svg` (4:3), `about-jobsite.svg` (4:5) | as noted | The actual team and an actual job site. |
-| Projects (×12) | `projects/<slug>-before.svg` / `-after.svg` | 3:2 | Matched pairs — see below. |
+| Contact page | `site/about-jobsite.svg` | portrait 4:5 | An actual job site or the crew. |
+| Projects (×8) | `projects/<slug>-before.svg` / `-after.svg` | 3:2 | Matched pairs — see below. |
 
 To swap one in:
 
@@ -115,6 +117,24 @@ change the image paths, title, blurb and location. The `data-category`
 attribute controls which filter button shows it — use one of
 `renovations`, `remediation`, `decks`, `landscaping`, `exteriors`.
 Add `project--wide` to the class list to show one at full width.
+
+## The logo
+
+Three files in `assets/img/site/`:
+
+| File | Use |
+|---|---|
+| `logo-mark.svg` | Default — dark shield, white "A", orange crossbar. Light backgrounds. |
+| `logo-mark-invert.svg` | White shield for dark backgrounds (used in the footer). |
+| `logo-mark-mono.svg` | Single colour, one path. For signage, invoices, embroidery and vehicle vinyl — change the one `fill` to whatever the printer needs. |
+
+The wordmark next to it is live HTML text, not an image, so it stays sharp and
+readable to search engines. It's in the `.brand` block of each page's header.
+
+`favicon.svg` is a slightly heavier cut of the same mark so it survives at 16px.
+
+If your friend ever has a designer do a proper identity, these are the four
+files to swap and nothing else changes.
 
 ## Content to replace before launch
 
@@ -188,7 +208,7 @@ assets/
   js/main.js         nav, comparison sliders, filters, form, sticky call bar
   fonts/             Inter + Archivo, self-hosted (88 KB, no Google request)
   img/projects/      before/after pairs
-  img/site/          hero, tiles, bands, page headers, logo, favicon, share image
+  img/site/          hero, tiles, bands, page headers, logos, favicon, share image
 tools/
   make-placeholders.py   regenerates every placeholder image
 robots.txt, sitemap.xml
@@ -226,6 +246,7 @@ python3 tools/make-placeholders.py
 ## Pre-launch checklist
 
 - [ ] Real photos in, `alt` text written
+- [ ] Logo replaced if a designer produces a custom identity
 - [ ] Phone, email, address, licence numbers replaced everywhere
 - [ ] Real reviews with permission; statistics verified
 - [ ] Form endpoint connected and tested end to end
