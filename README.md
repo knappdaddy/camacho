@@ -8,11 +8,32 @@ dependencies.** Edit the files, refresh the browser, done.
 
 ---
 
-## Preview it locally
+## Previewing
+
+**The live preview is https://knappdaddy.github.io/camacho/**
+
+It redeploys automatically on every push to `main` — about 30 seconds — then
+refresh the browser. The footer draft notice carries a **Preview build**
+timestamp so you can tell at a glance whether you are looking at the new version
+or a cached one. If the stamp looks stale, hard-refresh
+(<kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>) — GitHub's CDN caches
+for a short while.
+
+Deploy status, if a push doesn't seem to land:
+<https://github.com/knappdaddy/camacho/actions>
+
+Whoever pushes should stamp the build first:
+
+```bash
+python3 tools/stamp-build.py
+git add -A && git commit -m "..." && git push
+```
+
+### Running it locally
 
 Because the site loads its own font files, browsers block them when you open
-`index.html` by double-clicking (a `file://` security rule). Run a tiny local
-server instead:
+`index.html` by double-clicking (a `file://` security rule). Run a small server
+instead:
 
 ```bash
 cd camacho
@@ -21,8 +42,6 @@ python3 -m http.server 8000
 
 Then open <http://localhost:8000>. Double-clicking `index.html` still works —
 the site just falls back to system fonts, so don't judge the typography that way.
-
----
 
 ## Pages
 
