@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1100" width="2400" height="1100"
+     role="img" aria-label="Services Header — placeholder image">
+  <defs>
+    <linearGradient id="wall-head-services" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#8A97A5"/><stop offset="1" stop-color="#5A6470"/>
+    </linearGradient>
+    <linearGradient id="floor-head-services" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#46505B" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#46505B"/>
+    </linearGradient>
+    <linearGradient id="pane-head-services" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#FFD9A8" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FFD9A8" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="shaft-head-services" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD9A8" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#FFD9A8" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="lamp-head-services" cx="0.501" cy="0.337" r="0.62">
+      <stop offset="0" stop-color="#E8A263" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#E8A263" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig-head-services" cx="0.5" cy="0.48" r="0.78">
+      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="2400" height="1100" fill="url(#wall-head-services)"/>
+  <rect x="671" y="377" width="409" height="238" rx="4" fill="url(#pane-head-services)" fill-opacity="0.33"/><rect x="671" y="377" width="409" height="238" rx="4" fill="none" stroke="#FFD9A8" stroke-opacity="0.18" stroke-width="2.0"/><rect x="1429" y="203" width="323" height="378" rx="4" fill="url(#pane-head-services)" fill-opacity="0.18"/><rect x="1429" y="203" width="323" height="378" rx="4" fill="none" stroke="#FFD9A8" stroke-opacity="0.10" stroke-width="2.0"/>
+  <rect y="674" width="2400" height="426" fill="url(#floor-head-services)"/>
+  <rect y="674" width="2400" height="2.0" fill="#FFD9A8" fill-opacity="0.18"/>
+  <path d="M1009 674 L1441 674 L2017 1100 L481 1100 Z" fill="url(#shaft-head-services)" fill-opacity="0.5"/>
+  <rect width="2400" height="1100" fill="url(#lamp-head-services)"/>
+  <rect width="2400" height="1100" fill="url(#vig-head-services)"/>
+  <text x="1200" y="550" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="42"
+        font-weight="650" fill="#FFFFFF" fill-opacity="0.90">Services Header</text>
+  <text x="1200" y="601" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="24"
+        font-weight="500" letter-spacing="2.4"
+        fill="#FFFFFF" fill-opacity="0.40">REPLACE WITH PHOTO</text>
+</svg>

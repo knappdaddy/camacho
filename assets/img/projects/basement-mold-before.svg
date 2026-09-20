@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1067" width="1600" height="1067"
+     role="img" aria-label="Basement Mold Remediation — placeholder image">
+  <defs>
+    <linearGradient id="wall-basement-mold-before" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#4A5058"/><stop offset="1" stop-color="#313740"/>
+    </linearGradient>
+    <linearGradient id="floor-basement-mold-before" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#262B31" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#262B31"/>
+    </linearGradient>
+    <linearGradient id="pane-basement-mold-before" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#A5B0BD" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#A5B0BD" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="shaft-basement-mold-before" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A5B0BD" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#A5B0BD" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="lamp-basement-mold-before" cx="0.320" cy="0.352" r="0.62">
+      <stop offset="0" stop-color="#8A94A0" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#8A94A0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig-basement-mold-before" cx="0.5" cy="0.48" r="0.78">
+      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1067" fill="url(#wall-basement-mold-before)"/>
+  <rect x="239" y="367" width="108" height="245" rx="4" fill="url(#pane-basement-mold-before)" fill-opacity="0.19"/><rect x="239" y="367" width="108" height="245" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.10" stroke-width="1.9"/><rect x="583" y="273" width="154" height="296" rx="4" fill="url(#pane-basement-mold-before)" fill-opacity="0.28"/><rect x="583" y="273" width="154" height="296" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.15" stroke-width="1.9"/><rect x="868" y="313" width="125" height="250" rx="4" fill="url(#pane-basement-mold-before)" fill-opacity="0.36"/><rect x="868" y="313" width="125" height="250" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.20" stroke-width="1.9"/><rect x="1192" y="87" width="142" height="420" rx="4" fill="url(#pane-basement-mold-before)" fill-opacity="0.24"/><rect x="1192" y="87" width="142" height="420" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.13" stroke-width="1.9"/>
+  <rect y="682" width="1600" height="385" fill="url(#floor-basement-mold-before)"/>
+  <rect y="682" width="1600" height="1.9" fill="#A5B0BD" fill-opacity="0.18"/>
+  <path d="M385 682 L673 682 L1057 1067 L33 1067 Z" fill="url(#shaft-basement-mold-before)" fill-opacity="0.5"/>
+  <rect width="1600" height="1067" fill="url(#lamp-basement-mold-before)"/>
+  <rect width="1600" height="1067" fill="url(#vig-basement-mold-before)"/>
+  <text x="800" y="534" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="40"
+        font-weight="650" fill="#FFFFFF" fill-opacity="0.90">Basement Mold Remediation</text>
+  <text x="800" y="583" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="24"
+        font-weight="500" letter-spacing="2.4"
+        fill="#FFFFFF" fill-opacity="0.40">REPLACE WITH PHOTO</text>
+  <g>
+    <rect x="38" y="38" width="156" height="59"
+          rx="30" fill="#8A94A0" fill-opacity="0.95"/>
+    <text x="116" y="77" text-anchor="middle"
+          font-family="Inter, Helvetica, Arial, sans-serif" font-size="25"
+          font-weight="700" letter-spacing="3.1" fill="#0B0E12">BEFORE</text>
+  </g>
+</svg>

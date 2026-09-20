@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1067" width="1600" height="1067"
+     role="img" aria-label="Backyard Regrade &amp; Patio — placeholder image">
+  <defs>
+    <linearGradient id="wall-backyard-transform-after" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#4A5560"/><stop offset="1" stop-color="#2E3842"/>
+    </linearGradient>
+    <linearGradient id="floor-backyard-transform-after" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#232B33" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#232B33"/>
+    </linearGradient>
+    <linearGradient id="pane-backyard-transform-after" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#FFC98E" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FFC98E" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="shaft-backyard-transform-after" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFC98E" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#FFC98E" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="lamp-backyard-transform-after" cx="0.198" cy="0.375" r="0.62">
+      <stop offset="0" stop-color="#EFA25E" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#EFA25E" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig-backyard-transform-after" cx="0.5" cy="0.48" r="0.78">
+      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1067" fill="url(#wall-backyard-transform-after)"/>
+  <rect x="293" y="329" width="164" height="258" rx="4" fill="url(#pane-backyard-transform-after)" fill-opacity="0.23"/><rect x="293" y="329" width="164" height="258" rx="4" fill="none" stroke="#FFC98E" stroke-opacity="0.13" stroke-width="1.9"/><rect x="664" y="141" width="188" height="440" rx="4" fill="url(#pane-backyard-transform-after)" fill-opacity="0.32"/><rect x="664" y="141" width="188" height="440" rx="4" fill="none" stroke="#FFC98E" stroke-opacity="0.18" stroke-width="1.9"/><rect x="1075" y="341" width="167" height="305" rx="4" fill="url(#pane-backyard-transform-after)" fill-opacity="0.40"/><rect x="1075" y="341" width="167" height="305" rx="4" fill="none" stroke="#FFC98E" stroke-opacity="0.22" stroke-width="1.9"/>
+  <rect y="728" width="1600" height="339" fill="url(#floor-backyard-transform-after)"/>
+  <rect y="728" width="1600" height="1.9" fill="#FFC98E" fill-opacity="0.18"/>
+  <path d="M190 728 L478 728 L862 1067 L-162 1067 Z" fill="url(#shaft-backyard-transform-after)" fill-opacity="0.5"/>
+  <rect width="1600" height="1067" fill="url(#lamp-backyard-transform-after)"/>
+  <rect width="1600" height="1067" fill="url(#vig-backyard-transform-after)"/>
+  <text x="800" y="534" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="40"
+        font-weight="650" fill="#FFFFFF" fill-opacity="0.90">Backyard Regrade &amp; Patio</text>
+  <text x="800" y="583" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="24"
+        font-weight="500" letter-spacing="2.4"
+        fill="#FFFFFF" fill-opacity="0.40">REPLACE WITH PHOTO</text>
+  <g>
+    <rect x="38" y="38" width="136" height="59"
+          rx="30" fill="#EFA25E" fill-opacity="0.95"/>
+    <text x="106" y="77" text-anchor="middle"
+          font-family="Inter, Helvetica, Arial, sans-serif" font-size="25"
+          font-weight="700" letter-spacing="3.1" fill="#0B0E12">AFTER</text>
+  </g>
+</svg>

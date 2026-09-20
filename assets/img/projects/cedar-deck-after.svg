@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1067" width="1600" height="1067"
+     role="img" aria-label="Two-Level Cedar Deck — placeholder image">
+  <defs>
+    <linearGradient id="wall-cedar-deck-after" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#4A5560"/><stop offset="1" stop-color="#2E3842"/>
+    </linearGradient>
+    <linearGradient id="floor-cedar-deck-after" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#232B33" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#232B33"/>
+    </linearGradient>
+    <linearGradient id="pane-cedar-deck-after" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#FFC98E" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FFC98E" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="shaft-cedar-deck-after" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFC98E" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#FFC98E" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="lamp-cedar-deck-after" cx="0.629" cy="0.335" r="0.62">
+      <stop offset="0" stop-color="#EFA25E" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#EFA25E" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig-cedar-deck-after" cx="0.5" cy="0.48" r="0.78">
+      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1067" fill="url(#wall-cedar-deck-after)"/>
+  <rect x="310" y="226" width="141" height="266" rx="4" fill="url(#pane-cedar-deck-after)" fill-opacity="0.27"/><rect x="310" y="226" width="141" height="266" rx="4" fill="none" stroke="#FFC98E" stroke-opacity="0.15" stroke-width="1.9"/><rect x="773" y="327" width="141" height="231" rx="4" fill="url(#pane-cedar-deck-after)" fill-opacity="0.17"/><rect x="773" y="327" width="141" height="231" rx="4" fill="none" stroke="#FFC98E" stroke-opacity="0.09" stroke-width="1.9"/><rect x="1134" y="361" width="195" height="226" rx="4" fill="url(#pane-cedar-deck-after)" fill-opacity="0.26"/><rect x="1134" y="361" width="195" height="226" rx="4" fill="none" stroke="#FFC98E" stroke-opacity="0.14" stroke-width="1.9"/>
+  <rect y="649" width="1600" height="418" fill="url(#floor-cedar-deck-after)"/>
+  <rect y="649" width="1600" height="1.9" fill="#FFC98E" fill-opacity="0.18"/>
+  <path d="M879 649 L1167 649 L1551 1067 L527 1067 Z" fill="url(#shaft-cedar-deck-after)" fill-opacity="0.5"/>
+  <rect width="1600" height="1067" fill="url(#lamp-cedar-deck-after)"/>
+  <rect width="1600" height="1067" fill="url(#vig-cedar-deck-after)"/>
+  <text x="800" y="534" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="40"
+        font-weight="650" fill="#FFFFFF" fill-opacity="0.90">Two-Level Cedar Deck</text>
+  <text x="800" y="583" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="24"
+        font-weight="500" letter-spacing="2.4"
+        fill="#FFFFFF" fill-opacity="0.40">REPLACE WITH PHOTO</text>
+  <g>
+    <rect x="38" y="38" width="136" height="59"
+          rx="30" fill="#EFA25E" fill-opacity="0.95"/>
+    <text x="106" y="77" text-anchor="middle"
+          font-family="Inter, Helvetica, Arial, sans-serif" font-size="25"
+          font-weight="700" letter-spacing="3.1" fill="#0B0E12">AFTER</text>
+  </g>
+</svg>

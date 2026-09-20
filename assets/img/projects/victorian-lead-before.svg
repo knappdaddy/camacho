@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1067" width="1600" height="1067"
+     role="img" aria-label="Lead Paint Abatement — placeholder image">
+  <defs>
+    <linearGradient id="wall-victorian-lead-before" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#4A5058"/><stop offset="1" stop-color="#313740"/>
+    </linearGradient>
+    <linearGradient id="floor-victorian-lead-before" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#262B31" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#262B31"/>
+    </linearGradient>
+    <linearGradient id="pane-victorian-lead-before" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#A5B0BD" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#A5B0BD" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="shaft-victorian-lead-before" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A5B0BD" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#A5B0BD" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="lamp-victorian-lead-before" cx="0.669" cy="0.320" r="0.62">
+      <stop offset="0" stop-color="#8A94A0" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#8A94A0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig-victorian-lead-before" cx="0.5" cy="0.48" r="0.78">
+      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1067" fill="url(#wall-victorian-lead-before)"/>
+  <rect x="289" y="148" width="135" height="366" rx="4" fill="url(#pane-victorian-lead-before)" fill-opacity="0.41"/><rect x="289" y="148" width="135" height="366" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.22" stroke-width="1.9"/><rect x="552" y="158" width="130" height="370" rx="4" fill="url(#pane-victorian-lead-before)" fill-opacity="0.33"/><rect x="552" y="158" width="130" height="370" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.18" stroke-width="1.9"/><rect x="899" y="177" width="121" height="317" rx="4" fill="url(#pane-victorian-lead-before)" fill-opacity="0.18"/><rect x="899" y="177" width="121" height="317" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.10" stroke-width="1.9"/><rect x="1222" y="150" width="118" height="374" rx="4" fill="url(#pane-victorian-lead-before)" fill-opacity="0.35"/><rect x="1222" y="150" width="118" height="374" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.19" stroke-width="1.9"/>
+  <rect y="621" width="1600" height="446" fill="url(#floor-victorian-lead-before)"/>
+  <rect y="621" width="1600" height="1.9" fill="#A5B0BD" fill-opacity="0.18"/>
+  <path d="M942 621 L1230 621 L1614 1067 L590 1067 Z" fill="url(#shaft-victorian-lead-before)" fill-opacity="0.5"/>
+  <rect width="1600" height="1067" fill="url(#lamp-victorian-lead-before)"/>
+  <rect width="1600" height="1067" fill="url(#vig-victorian-lead-before)"/>
+  <text x="800" y="534" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="40"
+        font-weight="650" fill="#FFFFFF" fill-opacity="0.90">Lead Paint Abatement</text>
+  <text x="800" y="583" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="24"
+        font-weight="500" letter-spacing="2.4"
+        fill="#FFFFFF" fill-opacity="0.40">REPLACE WITH PHOTO</text>
+  <g>
+    <rect x="38" y="38" width="156" height="59"
+          rx="30" fill="#8A94A0" fill-opacity="0.95"/>
+    <text x="116" y="77" text-anchor="middle"
+          font-family="Inter, Helvetica, Arial, sans-serif" font-size="25"
+          font-weight="700" letter-spacing="3.1" fill="#0B0E12">BEFORE</text>
+  </g>
+</svg>

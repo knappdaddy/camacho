@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1500" width="2400" height="1500"
+     role="img" aria-label="Hero Photograph — placeholder image">
+  <defs>
+    <linearGradient id="wall-hero-bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#8A97A5"/><stop offset="1" stop-color="#5A6470"/>
+    </linearGradient>
+    <linearGradient id="floor-hero-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#46505B" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#46505B"/>
+    </linearGradient>
+    <linearGradient id="pane-hero-bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#FFD9A8" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FFD9A8" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="shaft-hero-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD9A8" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#FFD9A8" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="lamp-hero-bg" cx="0.519" cy="0.324" r="0.62">
+      <stop offset="0" stop-color="#E8A263" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#E8A263" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig-hero-bg" cx="0.5" cy="0.48" r="0.78">
+      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="2400" height="1500" fill="url(#wall-hero-bg)"/>
+  <rect x="303" y="443" width="240" height="324" rx="5" fill="url(#pane-hero-bg)" fill-opacity="0.37"/><rect x="303" y="443" width="240" height="324" rx="5" fill="none" stroke="#FFD9A8" stroke-opacity="0.20" stroke-width="2.7"/><rect x="813" y="311" width="236" height="482" rx="5" fill="url(#pane-hero-bg)" fill-opacity="0.40"/><rect x="813" y="311" width="236" height="482" rx="5" fill="none" stroke="#FFD9A8" stroke-opacity="0.22" stroke-width="2.7"/><rect x="1263" y="409" width="247" height="413" rx="5" fill="url(#pane-hero-bg)" fill-opacity="0.16"/><rect x="1263" y="409" width="247" height="413" rx="5" fill="none" stroke="#FFD9A8" stroke-opacity="0.09" stroke-width="2.7"/><rect x="1771" y="316" width="248" height="379" rx="5" fill="url(#pane-hero-bg)" fill-opacity="0.21"/><rect x="1771" y="316" width="248" height="379" rx="5" fill="none" stroke="#FFD9A8" stroke-opacity="0.12" stroke-width="2.7"/>
+  <rect y="884" width="2400" height="616" fill="url(#floor-hero-bg)"/>
+  <rect y="884" width="2400" height="2.7" fill="#FFD9A8" fill-opacity="0.18"/>
+  <path d="M1053 884 L1485 884 L2061 1500 L525 1500 Z" fill="url(#shaft-hero-bg)" fill-opacity="0.5"/>
+  <rect width="2400" height="1500" fill="url(#lamp-hero-bg)"/>
+  <rect width="2400" height="1500" fill="url(#vig-hero-bg)"/>
+  <text x="1200" y="750" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="57"
+        font-weight="650" fill="#FFFFFF" fill-opacity="0.90">Hero Photograph</text>
+  <text x="1200" y="820" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="33"
+        font-weight="500" letter-spacing="3.3"
+        fill="#FFFFFF" fill-opacity="0.40">REPLACE WITH YOUR BEST PHOTO</text>
+</svg>

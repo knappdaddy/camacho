@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1200" width="2400" height="1200"
+     role="img" aria-label="Finished Interior — placeholder image">
+  <defs>
+    <linearGradient id="wall-band-quote" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#2A343E"/><stop offset="1" stop-color="#151C22"/>
+    </linearGradient>
+    <linearGradient id="floor-band-quote" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0E1318" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#0E1318"/>
+    </linearGradient>
+    <linearGradient id="pane-band-quote" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#F0A867" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#F0A867" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="shaft-band-quote" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F0A867" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#F0A867" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="lamp-band-quote" cx="0.643" cy="0.356" r="0.62">
+      <stop offset="0" stop-color="#D9884A" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#D9884A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig-band-quote" cx="0.5" cy="0.48" r="0.78">
+      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="2400" height="1200" fill="url(#wall-band-quote)"/>
+  <rect x="451" y="230" width="297" height="396" rx="4" fill="url(#pane-band-quote)" fill-opacity="0.28"/><rect x="451" y="230" width="297" height="396" rx="4" fill="none" stroke="#F0A867" stroke-opacity="0.16" stroke-width="2.1"/><rect x="1086" y="179" width="249" height="439" rx="4" fill="url(#pane-band-quote)" fill-opacity="0.35"/><rect x="1086" y="179" width="249" height="439" rx="4" fill="none" stroke="#F0A867" stroke-opacity="0.19" stroke-width="2.1"/><rect x="1754" y="257" width="187" height="377" rx="4" fill="url(#pane-band-quote)" fill-opacity="0.27"/><rect x="1754" y="257" width="187" height="377" rx="4" fill="none" stroke="#F0A867" stroke-opacity="0.15" stroke-width="2.1"/>
+  <rect y="776" width="2400" height="424" fill="url(#floor-band-quote)"/>
+  <rect y="776" width="2400" height="2.1" fill="#F0A867" fill-opacity="0.18"/>
+  <path d="M1352 776 L1784 776 L2360 1200 L824 1200 Z" fill="url(#shaft-band-quote)" fill-opacity="0.5"/>
+  <rect width="2400" height="1200" fill="url(#lamp-band-quote)"/>
+  <rect width="2400" height="1200" fill="url(#vig-band-quote)"/>
+  <text x="1200" y="600" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="45"
+        font-weight="650" fill="#FFFFFF" fill-opacity="0.90">Finished Interior</text>
+  <text x="1200" y="656" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="27"
+        font-weight="500" letter-spacing="2.7"
+        fill="#FFFFFF" fill-opacity="0.40">REPLACE WITH PHOTO</text>
+</svg>

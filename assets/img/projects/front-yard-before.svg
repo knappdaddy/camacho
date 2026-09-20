@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1067" width="1600" height="1067"
+     role="img" aria-label="Front Yard Curb Appeal — placeholder image">
+  <defs>
+    <linearGradient id="wall-front-yard-before" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#4A5058"/><stop offset="1" stop-color="#313740"/>
+    </linearGradient>
+    <linearGradient id="floor-front-yard-before" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#262B31" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#262B31"/>
+    </linearGradient>
+    <linearGradient id="pane-front-yard-before" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#A5B0BD" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#A5B0BD" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="shaft-front-yard-before" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A5B0BD" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#A5B0BD" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="lamp-front-yard-before" cx="0.520" cy="0.333" r="0.62">
+      <stop offset="0" stop-color="#8A94A0" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#8A94A0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig-front-yard-before" cx="0.5" cy="0.48" r="0.78">
+      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1067" fill="url(#wall-front-yard-before)"/>
+  <rect x="233" y="267" width="162" height="339" rx="4" fill="url(#pane-front-yard-before)" fill-opacity="0.24"/><rect x="233" y="267" width="162" height="339" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.13" stroke-width="1.9"/><rect x="523" y="251" width="166" height="334" rx="4" fill="url(#pane-front-yard-before)" fill-opacity="0.20"/><rect x="523" y="251" width="166" height="334" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.11" stroke-width="1.9"/><rect x="866" y="219" width="139" height="343" rx="4" fill="url(#pane-front-yard-before)" fill-opacity="0.32"/><rect x="866" y="219" width="139" height="343" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.18" stroke-width="1.9"/><rect x="1197" y="344" width="124" height="261" rx="4" fill="url(#pane-front-yard-before)" fill-opacity="0.25"/><rect x="1197" y="344" width="124" height="261" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.14" stroke-width="1.9"/>
+  <rect y="646" width="1600" height="421" fill="url(#floor-front-yard-before)"/>
+  <rect y="646" width="1600" height="1.9" fill="#A5B0BD" fill-opacity="0.18"/>
+  <path d="M704 646 L992 646 L1376 1067 L352 1067 Z" fill="url(#shaft-front-yard-before)" fill-opacity="0.5"/>
+  <rect width="1600" height="1067" fill="url(#lamp-front-yard-before)"/>
+  <rect width="1600" height="1067" fill="url(#vig-front-yard-before)"/>
+  <text x="800" y="534" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="40"
+        font-weight="650" fill="#FFFFFF" fill-opacity="0.90">Front Yard Curb Appeal</text>
+  <text x="800" y="583" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="24"
+        font-weight="500" letter-spacing="2.4"
+        fill="#FFFFFF" fill-opacity="0.40">REPLACE WITH PHOTO</text>
+  <g>
+    <rect x="38" y="38" width="156" height="59"
+          rx="30" fill="#8A94A0" fill-opacity="0.95"/>
+    <text x="116" y="77" text-anchor="middle"
+          font-family="Inter, Helvetica, Arial, sans-serif" font-size="25"
+          font-weight="700" letter-spacing="3.1" fill="#0B0E12">BEFORE</text>
+  </g>
+</svg>

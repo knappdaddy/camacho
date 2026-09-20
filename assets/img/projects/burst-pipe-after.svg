@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1067" width="1600" height="1067"
+     role="img" aria-label="Burst Pipe Water Mitigation — placeholder image">
+  <defs>
+    <linearGradient id="wall-burst-pipe-after" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#4A5560"/><stop offset="1" stop-color="#2E3842"/>
+    </linearGradient>
+    <linearGradient id="floor-burst-pipe-after" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#232B33" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#232B33"/>
+    </linearGradient>
+    <linearGradient id="pane-burst-pipe-after" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#FFC98E" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FFC98E" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="shaft-burst-pipe-after" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFC98E" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#FFC98E" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="lamp-burst-pipe-after" cx="0.187" cy="0.354" r="0.62">
+      <stop offset="0" stop-color="#EFA25E" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#EFA25E" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig-burst-pipe-after" cx="0.5" cy="0.48" r="0.78">
+      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1067" fill="url(#wall-burst-pipe-after)"/>
+  <rect x="435" y="169" width="167" height="391" rx="4" fill="url(#pane-burst-pipe-after)" fill-opacity="0.21"/><rect x="435" y="169" width="167" height="391" rx="4" fill="none" stroke="#FFC98E" stroke-opacity="0.11" stroke-width="1.9"/><rect x="979" y="215" width="198" height="358" rx="4" fill="url(#pane-burst-pipe-after)" fill-opacity="0.41"/><rect x="979" y="215" width="198" height="358" rx="4" fill="none" stroke="#FFC98E" stroke-opacity="0.22" stroke-width="1.9"/>
+  <rect y="686" width="1600" height="381" fill="url(#floor-burst-pipe-after)"/>
+  <rect y="686" width="1600" height="1.9" fill="#FFC98E" fill-opacity="0.18"/>
+  <path d="M171 686 L459 686 L843 1067 L-181 1067 Z" fill="url(#shaft-burst-pipe-after)" fill-opacity="0.5"/>
+  <rect width="1600" height="1067" fill="url(#lamp-burst-pipe-after)"/>
+  <rect width="1600" height="1067" fill="url(#vig-burst-pipe-after)"/>
+  <text x="800" y="534" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="40"
+        font-weight="650" fill="#FFFFFF" fill-opacity="0.90">Burst Pipe Water Mitigation</text>
+  <text x="800" y="583" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="24"
+        font-weight="500" letter-spacing="2.4"
+        fill="#FFFFFF" fill-opacity="0.40">REPLACE WITH PHOTO</text>
+  <g>
+    <rect x="38" y="38" width="136" height="59"
+          rx="30" fill="#EFA25E" fill-opacity="0.95"/>
+    <text x="106" y="77" text-anchor="middle"
+          font-family="Inter, Helvetica, Arial, sans-serif" font-size="25"
+          font-weight="700" letter-spacing="3.1" fill="#0B0E12">AFTER</text>
+  </g>
+</svg>

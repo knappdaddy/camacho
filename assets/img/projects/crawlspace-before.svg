@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1067" width="1600" height="1067"
+     role="img" aria-label="Crawlspace Encapsulation — placeholder image">
+  <defs>
+    <linearGradient id="wall-crawlspace-before" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#4A5058"/><stop offset="1" stop-color="#313740"/>
+    </linearGradient>
+    <linearGradient id="floor-crawlspace-before" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#262B31" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#262B31"/>
+    </linearGradient>
+    <linearGradient id="pane-crawlspace-before" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#A5B0BD" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#A5B0BD" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="shaft-crawlspace-before" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A5B0BD" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#A5B0BD" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="lamp-crawlspace-before" cx="0.199" cy="0.333" r="0.62">
+      <stop offset="0" stop-color="#8A94A0" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#8A94A0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig-crawlspace-before" cx="0.5" cy="0.48" r="0.78">
+      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1067" fill="url(#wall-crawlspace-before)"/>
+  <rect x="339" y="277" width="139" height="253" rx="4" fill="url(#pane-crawlspace-before)" fill-opacity="0.33"/><rect x="339" y="277" width="139" height="253" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.18" stroke-width="1.9"/><rect x="757" y="304" width="130" height="275" rx="4" fill="url(#pane-crawlspace-before)" fill-opacity="0.35"/><rect x="757" y="304" width="130" height="275" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.19" stroke-width="1.9"/><rect x="1114" y="240" width="155" height="284" rx="4" fill="url(#pane-crawlspace-before)" fill-opacity="0.40"/><rect x="1114" y="240" width="155" height="284" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.22" stroke-width="1.9"/>
+  <rect y="645" width="1600" height="422" fill="url(#floor-crawlspace-before)"/>
+  <rect y="645" width="1600" height="1.9" fill="#A5B0BD" fill-opacity="0.18"/>
+  <path d="M190 645 L478 645 L862 1067 L-162 1067 Z" fill="url(#shaft-crawlspace-before)" fill-opacity="0.5"/>
+  <rect width="1600" height="1067" fill="url(#lamp-crawlspace-before)"/>
+  <rect width="1600" height="1067" fill="url(#vig-crawlspace-before)"/>
+  <text x="800" y="534" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="40"
+        font-weight="650" fill="#FFFFFF" fill-opacity="0.90">Crawlspace Encapsulation</text>
+  <text x="800" y="583" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="24"
+        font-weight="500" letter-spacing="2.4"
+        fill="#FFFFFF" fill-opacity="0.40">REPLACE WITH PHOTO</text>
+  <g>
+    <rect x="38" y="38" width="156" height="59"
+          rx="30" fill="#8A94A0" fill-opacity="0.95"/>
+    <text x="116" y="77" text-anchor="middle"
+          font-family="Inter, Helvetica, Arial, sans-serif" font-size="25"
+          font-weight="700" letter-spacing="3.1" fill="#0B0E12">BEFORE</text>
+  </g>
+</svg>

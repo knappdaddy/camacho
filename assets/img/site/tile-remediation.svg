@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500"
+     role="img" aria-label="Mold Remediation — placeholder image">
+  <defs>
+    <linearGradient id="wall-tile-remediation" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#8A97A5"/><stop offset="1" stop-color="#5A6470"/>
+    </linearGradient>
+    <linearGradient id="floor-tile-remediation" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#46505B" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#46505B"/>
+    </linearGradient>
+    <linearGradient id="pane-tile-remediation" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#FFD9A8" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FFD9A8" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="shaft-tile-remediation" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD9A8" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#FFD9A8" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="lamp-tile-remediation" cx="0.332" cy="0.378" r="0.62">
+      <stop offset="0" stop-color="#E8A263" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#E8A263" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig-tile-remediation" cx="0.5" cy="0.48" r="0.78">
+      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#wall-tile-remediation)"/>
+  <rect x="304" y="426" width="166" height="394" rx="4" fill="url(#pane-tile-remediation)" fill-opacity="0.29"/><rect x="304" y="426" width="166" height="394" rx="4" fill="none" stroke="#FFD9A8" stroke-opacity="0.16" stroke-width="2.1"/><rect x="727" y="482" width="186" height="426" rx="4" fill="url(#pane-tile-remediation)" fill-opacity="0.25"/><rect x="727" y="482" width="186" height="426" rx="4" fill="none" stroke="#FFD9A8" stroke-opacity="0.14" stroke-width="2.1"/>
+  <rect y="1030" width="1200" height="470" fill="url(#floor-tile-remediation)"/>
+  <rect y="1030" width="1200" height="2.1" fill="#FFD9A8" fill-opacity="0.18"/>
+  <path d="M302 1030 L518 1030 L806 1500 L38 1500 Z" fill="url(#shaft-tile-remediation)" fill-opacity="0.5"/>
+  <rect width="1200" height="1500" fill="url(#lamp-tile-remediation)"/>
+  <rect width="1200" height="1500" fill="url(#vig-tile-remediation)"/>
+  <text x="600" y="750" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="45"
+        font-weight="650" fill="#FFFFFF" fill-opacity="0.90">Mold Remediation</text>
+  <text x="600" y="806" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="27"
+        font-weight="500" letter-spacing="2.7"
+        fill="#FFFFFF" fill-opacity="0.40">REPLACE WITH PHOTO</text>
+</svg>

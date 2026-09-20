@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500"
+     role="img" aria-label="Decks &amp; Porches — placeholder image">
+  <defs>
+    <linearGradient id="wall-tile-decks" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#8A97A5"/><stop offset="1" stop-color="#5A6470"/>
+    </linearGradient>
+    <linearGradient id="floor-tile-decks" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#46505B" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#46505B"/>
+    </linearGradient>
+    <linearGradient id="pane-tile-decks" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#FFD9A8" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FFD9A8" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="shaft-tile-decks" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD9A8" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#FFD9A8" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="lamp-tile-decks" cx="0.229" cy="0.353" r="0.62">
+      <stop offset="0" stop-color="#E8A263" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#E8A263" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig-tile-decks" cx="0.5" cy="0.48" r="0.78">
+      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#wall-tile-decks)"/>
+  <rect x="202" y="359" width="113" height="436" rx="4" fill="url(#pane-tile-decks)" fill-opacity="0.40"/><rect x="202" y="359" width="113" height="436" rx="4" fill="none" stroke="#FFD9A8" stroke-opacity="0.22" stroke-width="2.1"/><rect x="453" y="514" width="95" height="368" rx="4" fill="url(#pane-tile-decks)" fill-opacity="0.28"/><rect x="453" y="514" width="95" height="368" rx="4" fill="none" stroke="#FFD9A8" stroke-opacity="0.16" stroke-width="2.1"/><rect x="681" y="268" width="83" height="523" rx="4" fill="url(#pane-tile-decks)" fill-opacity="0.41"/><rect x="681" y="268" width="83" height="523" rx="4" fill="none" stroke="#FFD9A8" stroke-opacity="0.23" stroke-width="2.1"/><rect x="880" y="512" width="112" height="366" rx="4" fill="url(#pane-tile-decks)" fill-opacity="0.35"/><rect x="880" y="512" width="112" height="366" rx="4" fill="none" stroke="#FFD9A8" stroke-opacity="0.19" stroke-width="2.1"/>
+  <rect y="962" width="1200" height="538" fill="url(#floor-tile-decks)"/>
+  <rect y="962" width="1200" height="2.1" fill="#FFD9A8" fill-opacity="0.18"/>
+  <path d="M179 962 L395 962 L683 1500 L-85 1500 Z" fill="url(#shaft-tile-decks)" fill-opacity="0.5"/>
+  <rect width="1200" height="1500" fill="url(#lamp-tile-decks)"/>
+  <rect width="1200" height="1500" fill="url(#vig-tile-decks)"/>
+  <text x="600" y="750" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="45"
+        font-weight="650" fill="#FFFFFF" fill-opacity="0.90">Decks &amp; Porches</text>
+  <text x="600" y="806" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="27"
+        font-weight="500" letter-spacing="2.7"
+        fill="#FFFFFF" fill-opacity="0.40">REPLACE WITH PHOTO</text>
+</svg>

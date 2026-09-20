@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" width="1600" height="1200"
+     role="img" aria-label="Team Photograph — placeholder image">
+  <defs>
+    <linearGradient id="wall-about-team" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#7C8794"/><stop offset="1" stop-color="#525C67"/>
+    </linearGradient>
+    <linearGradient id="floor-about-team" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3C444D" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#3C444D"/>
+    </linearGradient>
+    <linearGradient id="pane-about-team" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#F5BE8B" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#F5BE8B" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="shaft-about-team" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F5BE8B" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#F5BE8B" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="lamp-about-team" cx="0.378" cy="0.367" r="0.62">
+      <stop offset="0" stop-color="#DE9760" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#DE9760" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig-about-team" cx="0.5" cy="0.48" r="0.78">
+      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1200" fill="url(#wall-about-team)"/>
+  <rect x="325" y="224" width="198" height="483" rx="4" fill="url(#pane-about-team)" fill-opacity="0.40"/><rect x="325" y="224" width="198" height="483" rx="4" fill="none" stroke="#F5BE8B" stroke-opacity="0.22" stroke-width="2.1"/><rect x="746" y="227" width="125" height="416" rx="4" fill="url(#pane-about-team)" fill-opacity="0.28"/><rect x="746" y="227" width="125" height="416" rx="4" fill="none" stroke="#F5BE8B" stroke-opacity="0.15" stroke-width="2.1"/><rect x="1121" y="212" width="138" height="383" rx="4" fill="url(#pane-about-team)" fill-opacity="0.23"/><rect x="1121" y="212" width="138" height="383" rx="4" fill="none" stroke="#F5BE8B" stroke-opacity="0.13" stroke-width="2.1"/>
+  <rect y="802" width="1600" height="398" fill="url(#floor-about-team)"/>
+  <rect y="802" width="1600" height="2.1" fill="#F5BE8B" fill-opacity="0.18"/>
+  <path d="M476 802 L764 802 L1148 1200 L124 1200 Z" fill="url(#shaft-about-team)" fill-opacity="0.5"/>
+  <rect width="1600" height="1200" fill="url(#lamp-about-team)"/>
+  <rect width="1600" height="1200" fill="url(#vig-about-team)"/>
+  <text x="800" y="600" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="45"
+        font-weight="650" fill="#FFFFFF" fill-opacity="0.90">Team Photograph</text>
+  <text x="800" y="656" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="27"
+        font-weight="500" letter-spacing="2.7"
+        fill="#FFFFFF" fill-opacity="0.40">REPLACE WITH PHOTO</text>
+</svg>

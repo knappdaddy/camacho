@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900"
+     role="img" aria-label="Crew at Work — placeholder image">
+  <defs>
+    <linearGradient id="bg-process" x1="0" y1="0" x2="0.65" y2="1">
+      <stop offset="0" stop-color="#1D2B33"/>
+      <stop offset="1" stop-color="#101A20"/>
+    </linearGradient>
+    <linearGradient id="gl-process" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C97B3C" stop-opacity="0.26"/>
+      <stop offset="0.55" stop-color="#C97B3C" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="gr-process" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M120 0H0v120" fill="none"
+            stroke="#FFFFFF" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg-process)"/>
+  <rect width="1600" height="900" fill="url(#gr-process)"/>
+  <rect width="1600" height="900" fill="url(#gl-process)"/>
+  <g transform="translate(704 273) scale(3.000)"
+     fill="none" stroke="#C97B3C" stroke-opacity="0.85" stroke-width="2.4"
+     stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 14l8 8-8 8-8-8 8-8Z M40 30l12 12-6 6-12-12 6-6 M14 42l14-14"/>
+  </g>
+  <text x="800" y="531" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="56"
+        font-weight="650" fill="#FFFFFF" fill-opacity="0.92">Crew at Work</text>
+  <text x="800" y="606" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="36"
+        font-weight="500" letter-spacing="3.0"
+        fill="#FFFFFF" fill-opacity="0.42">REPLACE WITH PHOTO</text>
+</svg>

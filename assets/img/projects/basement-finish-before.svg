@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1067" width="1600" height="1067"
+     role="img" aria-label="Finished Basement — placeholder image">
+  <defs>
+    <linearGradient id="wall-basement-finish-before" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#4A5058"/><stop offset="1" stop-color="#313740"/>
+    </linearGradient>
+    <linearGradient id="floor-basement-finish-before" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#262B31" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#262B31"/>
+    </linearGradient>
+    <linearGradient id="pane-basement-finish-before" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#A5B0BD" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#A5B0BD" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="shaft-basement-finish-before" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A5B0BD" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#A5B0BD" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="lamp-basement-finish-before" cx="0.215" cy="0.349" r="0.62">
+      <stop offset="0" stop-color="#8A94A0" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#8A94A0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig-basement-finish-before" cx="0.5" cy="0.48" r="0.78">
+      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1067" fill="url(#wall-basement-finish-before)"/>
+  <rect x="233" y="248" width="145" height="374" rx="4" fill="url(#pane-basement-finish-before)" fill-opacity="0.21"/><rect x="233" y="248" width="145" height="374" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.11" stroke-width="1.9"/><rect x="601" y="183" width="137" height="324" rx="4" fill="url(#pane-basement-finish-before)" fill-opacity="0.33"/><rect x="601" y="183" width="137" height="324" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.18" stroke-width="1.9"/><rect x="923" y="275" width="124" height="353" rx="4" fill="url(#pane-basement-finish-before)" fill-opacity="0.30"/><rect x="923" y="275" width="124" height="353" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.17" stroke-width="1.9"/><rect x="1247" y="335" width="110" height="230" rx="4" fill="url(#pane-basement-finish-before)" fill-opacity="0.41"/><rect x="1247" y="335" width="110" height="230" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.23" stroke-width="1.9"/>
+  <rect y="677" width="1600" height="390" fill="url(#floor-basement-finish-before)"/>
+  <rect y="677" width="1600" height="1.9" fill="#A5B0BD" fill-opacity="0.18"/>
+  <path d="M216 677 L504 677 L888 1067 L-136 1067 Z" fill="url(#shaft-basement-finish-before)" fill-opacity="0.5"/>
+  <rect width="1600" height="1067" fill="url(#lamp-basement-finish-before)"/>
+  <rect width="1600" height="1067" fill="url(#vig-basement-finish-before)"/>
+  <text x="800" y="534" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="40"
+        font-weight="650" fill="#FFFFFF" fill-opacity="0.90">Finished Basement</text>
+  <text x="800" y="583" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="24"
+        font-weight="500" letter-spacing="2.4"
+        fill="#FFFFFF" fill-opacity="0.40">REPLACE WITH PHOTO</text>
+  <g>
+    <rect x="38" y="38" width="156" height="59"
+          rx="30" fill="#8A94A0" fill-opacity="0.95"/>
+    <text x="116" y="77" text-anchor="middle"
+          font-family="Inter, Helvetica, Arial, sans-serif" font-size="25"
+          font-weight="700" letter-spacing="3.1" fill="#0B0E12">BEFORE</text>
+  </g>
+</svg>
