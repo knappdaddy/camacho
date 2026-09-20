@@ -3,34 +3,41 @@
 Everything on the site is currently a drawn illustration. This is the list of
 what to replace, and a prompt for each if you're generating images.
 
-## Option A — pull from Unsplash (fastest)
+## Option A — pull from stock (fastest)
 
-Free for commercial use, no attribution required by the licence (the script
-credits photographers anyway, as the API Guidelines require).
+Pexels and Unsplash are both free for commercial use with no attribution
+required. `tools/fetch-stock.py` queries both and saves several candidates per
+slot so you can pick.
 
-**This must run on your own machine** — the Claude Code sandbox's egress policy
-denies unsplash.com with a 403, so it cannot be done from a session.
+**It must run on your own machine** — the Claude Code sandbox denies both hosts
+(403 on the proxy CONNECT), so this cannot be done from a session.
 
 ```bash
-export UNSPLASH_ACCESS_KEY=...            # free at https://unsplash.com/developers
-python3 tools/fetch-unsplash.py --candidates 3
-# review incoming/_candidates/, copy the keepers into incoming/ as <slot>.jpg
+export PEXELS_API_KEY=...                 # free, 200/hr: https://www.pexels.com/api/
+export UNSPLASH_ACCESS_KEY=...            # free, 50/hr:  https://unsplash.com/developers
+python3 tools/fetch-stock.py
+# review incoming/_candidates/ — filenames are suffixed -px / -us by source
+# copy the keepers into incoming/ as <slot>.jpg
 python3 tools/import-photos.py --apply
 git add -A && git commit -m "Real photography" && git push
 ```
 
-**Stock cannot do the before/after pairs.** There is no way to get two stock
-photos of the *same room* in two conditions, and a mismatched pair makes the
-wipe slider look broken — which is the one thing on this site worth protecting.
-So `fetch-unsplash.py` skips the sixteen pair slots by default. Use it for the
-twenty background and tile slots, and get the pairs from his actual jobs or from
-AI editing (generate the after, then edit *that image* into the before).
+Either key alone works. Pexels is the better bet for this subject matter —
+more practical, workmanlike imagery, and a rate limit that 36 slots won't blow
+through. Unsplash is stronger on polished interiors. Hence: query both, choose.
 
-`--include-pairs` will fetch unmatched stand-ins anyway if you want to see
-something there in the meantime.
+**About the before/after pairs.** Stock can't give you the same room in two
+conditions, so these are approximations — a dated kitchen next to a different
+modern kitchen. The queries are phrased in parallel on each side to pull similar
+framing, but they won't line up the way a real pair does. When choosing
+candidates, pick the two whose distance and angle are closest to each other;
+that matters more than either photo being the nicest on its own.
 
-Mold, water damage and lead paint are thin on Unsplash — expect to pick those by
-hand or leave them illustrated.
+`--skip-pairs` leaves those sixteen slots illustrated if you'd rather.
+
+Mold, water damage and lead paint are thin on both libraries. Expect to
+hand-pick those, or keep the illustrations — the drawn versions of those three
+are arguably better than what stock returns.
 
 ---
 

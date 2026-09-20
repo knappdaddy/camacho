@@ -73,6 +73,20 @@ def main():
         (found if src else missing).append((slot, dest, src))
 
     print(f"{len(found)} of {len(SLOTS)} slots supplied.\n")
+
+    # A photo wiped against an illustration looks obviously broken, in a way
+    # two merely-different photos do not. Catch half-supplied pairs early.
+    supplied = {slot for slot, _, src in found if src}
+    half = [s[:-7] for s in SLOTS
+            if s.endswith("-before") and (s[:-7] + "-after") in SLOTS
+            and (s in supplied) != ((s[:-7] + "-after") in supplied)]
+    if half:
+        print("WARNING — only one half of these before/after pairs is supplied.")
+        print("The other half stays an illustration, which looks wrong when the")
+        print("slider wipes between them. Supply both, or neither:")
+        for slug in half:
+            print(f"  {slug}")
+        print()
     if not apply:
         if found:
             print("Ready to import:")
