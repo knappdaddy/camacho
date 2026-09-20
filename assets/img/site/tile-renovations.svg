@@ -1,43 +1,109 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500"
-     role="img" aria-label="Home Renovations — placeholder image">
+     role="img" aria-label="Home renovations — illustrated placeholder">
   <defs>
-    <linearGradient id="wall-tile-renovations" x1="0" y1="0" x2="0.3" y2="1">
-      <stop offset="0" stop-color="#8A97A5"/><stop offset="1" stop-color="#5A6470"/>
-    </linearGradient>
-    <linearGradient id="floor-tile-renovations" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#46505B" stop-opacity="0.92"/>
-      <stop offset="1" stop-color="#46505B"/>
-    </linearGradient>
-    <linearGradient id="pane-tile-renovations" x1="0" y1="0" x2="0.4" y2="1">
-      <stop offset="0" stop-color="#FFD9A8" stop-opacity="0.85"/>
-      <stop offset="1" stop-color="#FFD9A8" stop-opacity="0.12"/>
-    </linearGradient>
-    <linearGradient id="shaft-tile-renovations" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFD9A8" stop-opacity="0.34"/>
-      <stop offset="1" stop-color="#FFD9A8" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="lamp-tile-renovations" cx="0.465" cy="0.334" r="0.62">
-      <stop offset="0" stop-color="#E8A263" stop-opacity="0.30"/>
-      <stop offset="1" stop-color="#E8A263" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="vig-tile-renovations" cx="0.5" cy="0.48" r="0.78">
-      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+<linearGradient id="wallk731" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9E3D9" stop-opacity="1"/><stop offset="1" stop-color="#CFC7BA" stop-opacity="1"/></linearGradient>
+<linearGradient id="flrk731" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B0885C" stop-opacity="1"/><stop offset="1" stop-color="#8A6944" stop-opacity="1"/></linearGradient>
+<filter id="grk731" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer>
+    </filter>
+<radialGradient id="vgk731" cx="0.5" cy="0.48" r="0.76">
+      <stop offset="0.42" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.42"/>
     </radialGradient>
   </defs>
-
-  <rect width="1200" height="1500" fill="url(#wall-tile-renovations)"/>
-  <rect x="170" y="494" width="91" height="325" rx="4" fill="url(#pane-tile-renovations)" fill-opacity="0.31"/><rect x="170" y="494" width="91" height="325" rx="4" fill="none" stroke="#FFD9A8" stroke-opacity="0.17" stroke-width="2.1"/><rect x="438" y="339" width="98" height="464" rx="4" fill="url(#pane-tile-renovations)" fill-opacity="0.23"/><rect x="438" y="339" width="98" height="464" rx="4" fill="none" stroke="#FFD9A8" stroke-opacity="0.12" stroke-width="2.1"/><rect x="660" y="121" width="107" height="561" rx="4" fill="url(#pane-tile-renovations)" fill-opacity="0.31"/><rect x="660" y="121" width="107" height="561" rx="4" fill="none" stroke="#FFD9A8" stroke-opacity="0.17" stroke-width="2.1"/><rect x="914" y="256" width="104" height="520" rx="4" fill="url(#pane-tile-renovations)" fill-opacity="0.34"/><rect x="914" y="256" width="104" height="520" rx="4" fill="none" stroke="#FFD9A8" stroke-opacity="0.19" stroke-width="2.1"/>
-  <rect y="912" width="1200" height="588" fill="url(#floor-tile-renovations)"/>
-  <rect y="912" width="1200" height="2.1" fill="#FFD9A8" fill-opacity="0.18"/>
-  <path d="M462 912 L678 912 L966 1500 L198 1500 Z" fill="url(#shaft-tile-renovations)" fill-opacity="0.5"/>
-  <rect width="1200" height="1500" fill="url(#lamp-tile-renovations)"/>
-  <rect width="1200" height="1500" fill="url(#vig-tile-renovations)"/>
-  <text x="600" y="750" text-anchor="middle"
-        font-family="Inter, Helvetica, Arial, sans-serif" font-size="45"
-        font-weight="650" fill="#FFFFFF" fill-opacity="0.90">Home Renovations</text>
-  <text x="600" y="806" text-anchor="middle"
-        font-family="Inter, Helvetica, Arial, sans-serif" font-size="27"
-        font-weight="500" letter-spacing="2.7"
-        fill="#FFFFFF" fill-opacity="0.40">REPLACE WITH PHOTO</text>
+<rect x="0.0" y="0.0" width="1200.0" height="1050.0" fill="url(#wallk731)"/>
+<rect x="0.0" y="1050.0" width="1200.0" height="450.0" fill="url(#flrk731)"/>
+<rect x="0.0" y="1017.0" width="1200.0" height="33.0" fill="#FFFFFF" fill-opacity="0.850"/>
+<polygon points="0.0,0.0 168.0,0.0 120.0,1500.0 0.0,1500.0" fill="#000" fill-opacity="0.130"/>
+<polygon points="1200.0,0.0 1032.0,0.0 1080.0,1500.0 1200.0,1500.0" fill="#000" fill-opacity="0.080"/>
+<polygon points="336.0,1050.0 864.0,1050.0 1080.0,1500.0 120.0,1500.0" fill="#FFF3DF" fill-opacity="0.130"/>
+<rect x="60.0" y="225.0" width="636.0" height="315.0" fill="#F4F1EB"/>
+<rect x="70.2" y="256.5" width="106.8" height="252.0" fill="#e3e0db"/>
+<rect x="75.3" y="269.1" width="96.7" height="226.8" fill="#f5f2ed"/>
+<rect x="151.6" y="420.3" width="20.4" height="11.0" fill="#C9A227" fill-opacity="0.900" rx="2.0"/>
+<line x1="60.0" y1="225.0" x2="60.0" y2="540.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.160" stroke-linecap="butt"/>
+<rect x="197.4" y="256.5" width="106.8" height="252.0" fill="#e3e0db"/>
+<rect x="202.5" y="269.1" width="96.7" height="226.8" fill="#f5f2ed"/>
+<rect x="278.8" y="420.3" width="20.4" height="11.0" fill="#C9A227" fill-opacity="0.900" rx="2.0"/>
+<line x1="187.2" y1="225.0" x2="187.2" y2="540.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.160" stroke-linecap="butt"/>
+<rect x="324.6" y="256.5" width="106.8" height="252.0" fill="#e3e0db"/>
+<rect x="329.7" y="269.1" width="96.7" height="226.8" fill="#f5f2ed"/>
+<rect x="406.0" y="420.3" width="20.4" height="11.0" fill="#C9A227" fill-opacity="0.900" rx="2.0"/>
+<line x1="314.4" y1="225.0" x2="314.4" y2="540.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.160" stroke-linecap="butt"/>
+<rect x="451.8" y="256.5" width="106.8" height="252.0" fill="#e3e0db"/>
+<rect x="456.9" y="269.1" width="96.7" height="226.8" fill="#f5f2ed"/>
+<rect x="533.2" y="420.3" width="20.4" height="11.0" fill="#C9A227" fill-opacity="0.900" rx="2.0"/>
+<line x1="441.6" y1="225.0" x2="441.6" y2="540.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.160" stroke-linecap="butt"/>
+<rect x="579.0" y="256.5" width="106.8" height="252.0" fill="#e3e0db"/>
+<rect x="584.1" y="269.1" width="96.7" height="226.8" fill="#f5f2ed"/>
+<rect x="660.4" y="420.3" width="20.4" height="11.0" fill="#C9A227" fill-opacity="0.900" rx="2.0"/>
+<line x1="568.8" y1="225.0" x2="568.8" y2="540.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.160" stroke-linecap="butt"/>
+<rect x="60.0" y="540.0" width="636.0" height="15.0" fill="#000" fill-opacity="0.200"/>
+<polygon points="327.1,540.0 483.1,540.0 459.1,615.0 351.1,615.0" fill="#B9BCC0"/>
+<rect x="60.0" y="558.0" width="636.0" height="195.0" fill="#f9f7f3"/>
+<line x1="60.0" y1="558.0" x2="60.0" y2="753.0" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="108.9" y1="558.0" x2="108.9" y2="753.0" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="157.8" y1="558.0" x2="157.8" y2="753.0" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="206.8" y1="558.0" x2="206.8" y2="753.0" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="255.7" y1="558.0" x2="255.7" y2="753.0" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="304.6" y1="558.0" x2="304.6" y2="753.0" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="353.5" y1="558.0" x2="353.5" y2="753.0" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="402.5" y1="558.0" x2="402.5" y2="753.0" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="451.4" y1="558.0" x2="451.4" y2="753.0" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="500.3" y1="558.0" x2="500.3" y2="753.0" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="549.2" y1="558.0" x2="549.2" y2="753.0" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="598.2" y1="558.0" x2="598.2" y2="753.0" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="647.1" y1="558.0" x2="647.1" y2="753.0" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="60.0" y1="623.0" x2="696.0" y2="623.0" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="60.0" y1="688.0" x2="696.0" y2="688.0" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<rect x="52.8" y="753.0" width="650.4" height="45.0" fill="#E9E5DE"/>
+<rect x="52.8" y="798.0" width="650.4" height="9.0" fill="#000" fill-opacity="0.180"/>
+<rect x="60.0" y="807.0" width="636.0" height="243.0" fill="#2F3A42"/>
+<rect x="70.2" y="825.0" width="106.8" height="194.4" fill="#3b464d"/>
+<rect x="98.2" y="849.0" width="50.9" height="15.0" fill="#C9A227" fill-opacity="0.900" rx="2.0"/>
+<rect x="197.4" y="825.0" width="106.8" height="194.4" fill="#3b464d"/>
+<rect x="225.4" y="849.0" width="50.9" height="15.0" fill="#C9A227" fill-opacity="0.900" rx="2.0"/>
+<rect x="324.6" y="825.0" width="106.8" height="194.4" fill="#3b464d"/>
+<rect x="352.6" y="849.0" width="50.9" height="15.0" fill="#C9A227" fill-opacity="0.900" rx="2.0"/>
+<rect x="451.8" y="825.0" width="106.8" height="194.4" fill="#3b464d"/>
+<rect x="479.8" y="849.0" width="50.9" height="15.0" fill="#C9A227" fill-opacity="0.900" rx="2.0"/>
+<rect x="579.0" y="825.0" width="106.8" height="194.4" fill="#3b464d"/>
+<rect x="607.0" y="849.0" width="50.9" height="15.0" fill="#C9A227" fill-opacity="0.900" rx="2.0"/>
+<rect x="60.0" y="1017.0" width="636.0" height="33.0" fill="#000" fill-opacity="0.280"/>
+<rect x="454.3" y="759.0" width="152.6" height="33.0" fill="#a8a5a0" rx="3.0"/>
+<rect x="778.8" y="268.8" width="290.4" height="437.4" fill="#FFFFFF" fill-opacity="0.950" rx="2.0"/>
+<rect x="792.0" y="285.0" width="264.0" height="405.0" fill="#FFF3DF" fill-opacity="0.920"/>
+<rect x="792.0" y="285.0" width="264.0" height="202.5" fill="#FFFFFF" fill-opacity="0.180"/>
+<line x1="924.0" y1="285.0" x2="924.0" y2="690.0" stroke="#FFFFFF" stroke-width="13.20" stroke-opacity="0.900" stroke-linecap="butt"/>
+<line x1="792.0" y1="487.5" x2="1056.0" y2="487.5" stroke="#FFFFFF" stroke-width="18.22" stroke-opacity="0.900" stroke-linecap="butt"/>
+<rect x="290.9" y="1131.0" width="570.2" height="45.0" fill="#E9E5DE"/>
+<rect x="290.9" y="1176.0" width="570.2" height="9.0" fill="#000" fill-opacity="0.200"/>
+<rect x="312.0" y="1185.0" width="528.0" height="277.5" fill="#2F3A42"/>
+<rect x="312.0" y="1185.0" width="528.0" height="277.5" fill="#000" fill-opacity="0.080"/>
+<rect x="396.5" y="1243.5" width="63.4" height="12.0" fill="#C9A227" fill-opacity="0.850" rx="2.0"/>
+<rect x="544.3" y="1243.5" width="63.4" height="12.0" fill="#C9A227" fill-opacity="0.850" rx="2.0"/>
+<rect x="692.2" y="1243.5" width="63.4" height="12.0" fill="#C9A227" fill-opacity="0.850" rx="2.0"/>
+<rect x="312.0" y="1453.5" width="528.0" height="18.0" fill="#000" fill-opacity="0.300"/>
+<line x1="470.4" y1="90.0" x2="470.4" y2="427.5" stroke="#3A3027" stroke-width="2.20" stroke-opacity="0.550" stroke-linecap="butt"/>
+<polygon points="441.6,495.0 499.2,495.0 482.4,427.5 458.4,427.5" fill="#E2743B"/>
+<ellipse cx="470.4" cy="498.0" rx="28.8" ry="13.5" fill="#FFF3DF"/>
+<ellipse cx="470.4" cy="540.0" rx="60.0" ry="45.0" fill="#FFF3DF" fill-opacity="0.18"/>
+<line x1="681.6" y1="90.0" x2="681.6" y2="427.5" stroke="#3A3027" stroke-width="2.20" stroke-opacity="0.550" stroke-linecap="butt"/>
+<polygon points="652.8,495.0 710.4,495.0 693.6,427.5 669.6,427.5" fill="#E2743B"/>
+<ellipse cx="681.6" cy="498.0" rx="28.8" ry="13.5" fill="#FFF3DF"/>
+<ellipse cx="681.6" cy="540.0" rx="60.0" ry="45.0" fill="#FFF3DF" fill-opacity="0.18"/>
+<line x1="0.0" y1="1100.0" x2="1200.0" y2="1100.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.090" stroke-linecap="butt"/>
+<line x1="0.0" y1="1150.0" x2="1200.0" y2="1150.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.090" stroke-linecap="butt"/>
+<line x1="0.0" y1="1200.0" x2="1200.0" y2="1200.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.090" stroke-linecap="butt"/>
+<line x1="0.0" y1="1250.0" x2="1200.0" y2="1250.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.090" stroke-linecap="butt"/>
+<line x1="0.0" y1="1300.0" x2="1200.0" y2="1300.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.090" stroke-linecap="butt"/>
+<line x1="0.0" y1="1350.0" x2="1200.0" y2="1350.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.090" stroke-linecap="butt"/>
+<line x1="0.0" y1="1400.0" x2="1200.0" y2="1400.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.090" stroke-linecap="butt"/>
+<line x1="0.0" y1="1450.0" x2="1200.0" y2="1450.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.090" stroke-linecap="butt"/>
+<line x1="0.0" y1="1500.0" x2="1200.0" y2="1500.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.090" stroke-linecap="butt"/>
+<text x="1179" y="1479" text-anchor="end" font-family="Inter, Helvetica, Arial, sans-serif" font-size="23" font-weight="600" letter-spacing="1.9" fill="#FFFFFF" fill-opacity="0.34">PLACEHOLDER</text>
+  <rect width="1200" height="1500" filter="url(#grk731)" opacity="0.5" style="mix-blend-mode:overlay"/>
+  <rect width="1200" height="1500" fill="url(#vgk731)"/>
 </svg>

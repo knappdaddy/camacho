@@ -1,50 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1067" width="1600" height="1067"
-     role="img" aria-label="Finished Basement — placeholder image">
+     role="img" aria-label="Before: Finished basement — illustrated placeholder">
   <defs>
-    <linearGradient id="wall-basement-finish-before" x1="0" y1="0" x2="0.3" y2="1">
-      <stop offset="0" stop-color="#4A5058"/><stop offset="1" stop-color="#313740"/>
-    </linearGradient>
-    <linearGradient id="floor-basement-finish-before" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#262B31" stop-opacity="0.92"/>
-      <stop offset="1" stop-color="#262B31"/>
-    </linearGradient>
-    <linearGradient id="pane-basement-finish-before" x1="0" y1="0" x2="0.4" y2="1">
-      <stop offset="0" stop-color="#A5B0BD" stop-opacity="0.85"/>
-      <stop offset="1" stop-color="#A5B0BD" stop-opacity="0.12"/>
-    </linearGradient>
-    <linearGradient id="shaft-basement-finish-before" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#A5B0BD" stop-opacity="0.34"/>
-      <stop offset="1" stop-color="#A5B0BD" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="lamp-basement-finish-before" cx="0.215" cy="0.349" r="0.62">
-      <stop offset="0" stop-color="#8A94A0" stop-opacity="0.30"/>
-      <stop offset="1" stop-color="#8A94A0" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="vig-basement-finish-before" cx="0.5" cy="0.48" r="0.78">
-      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+<linearGradient id="wallf8169" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6A6C70" stop-opacity="1"/><stop offset="1" stop-color="#4E5155" stop-opacity="1"/></linearGradient>
+<filter id="grf8169" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer>
+    </filter>
+<radialGradient id="vgf8169" cx="0.5" cy="0.48" r="0.76">
+      <stop offset="0.42" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.42"/>
     </radialGradient>
   </defs>
-
-  <rect width="1600" height="1067" fill="url(#wall-basement-finish-before)"/>
-  <rect x="233" y="248" width="145" height="374" rx="4" fill="url(#pane-basement-finish-before)" fill-opacity="0.21"/><rect x="233" y="248" width="145" height="374" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.11" stroke-width="1.9"/><rect x="601" y="183" width="137" height="324" rx="4" fill="url(#pane-basement-finish-before)" fill-opacity="0.33"/><rect x="601" y="183" width="137" height="324" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.18" stroke-width="1.9"/><rect x="923" y="275" width="124" height="353" rx="4" fill="url(#pane-basement-finish-before)" fill-opacity="0.30"/><rect x="923" y="275" width="124" height="353" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.17" stroke-width="1.9"/><rect x="1247" y="335" width="110" height="230" rx="4" fill="url(#pane-basement-finish-before)" fill-opacity="0.41"/><rect x="1247" y="335" width="110" height="230" rx="4" fill="none" stroke="#A5B0BD" stroke-opacity="0.23" stroke-width="1.9"/>
-  <rect y="677" width="1600" height="390" fill="url(#floor-basement-finish-before)"/>
-  <rect y="677" width="1600" height="1.9" fill="#A5B0BD" fill-opacity="0.18"/>
-  <path d="M216 677 L504 677 L888 1067 L-136 1067 Z" fill="url(#shaft-basement-finish-before)" fill-opacity="0.5"/>
-  <rect width="1600" height="1067" fill="url(#lamp-basement-finish-before)"/>
-  <rect width="1600" height="1067" fill="url(#vig-basement-finish-before)"/>
-  <text x="800" y="534" text-anchor="middle"
-        font-family="Inter, Helvetica, Arial, sans-serif" font-size="40"
-        font-weight="650" fill="#FFFFFF" fill-opacity="0.90">Finished Basement</text>
-  <text x="800" y="583" text-anchor="middle"
-        font-family="Inter, Helvetica, Arial, sans-serif" font-size="24"
-        font-weight="500" letter-spacing="2.4"
-        fill="#FFFFFF" fill-opacity="0.40">REPLACE WITH PHOTO</text>
-  <g>
-    <rect x="38" y="38" width="156" height="59"
-          rx="30" fill="#8A94A0" fill-opacity="0.95"/>
-    <text x="116" y="77" text-anchor="middle"
-          font-family="Inter, Helvetica, Arial, sans-serif" font-size="25"
-          font-weight="700" letter-spacing="3.1" fill="#0B0E12">BEFORE</text>
-  </g>
+<rect x="0.0" y="0.0" width="1600.0" height="853.6" fill="url(#wallf8169)"/>
+<rect x="0.0" y="853.6" width="1600.0" height="213.4" fill="#7C7F82"/>
+<rect x="0.0" y="0.0" width="1600.0" height="213.4" fill="#3E4145"/>
+<rect x="0.0" y="0.0" width="35.2" height="213.4" fill="#9A8F7C" fill-opacity="0.850"/>
+<rect x="114.3" y="0.0" width="35.2" height="213.4" fill="#9A8F7C" fill-opacity="0.850"/>
+<rect x="228.6" y="0.0" width="35.2" height="213.4" fill="#9A8F7C" fill-opacity="0.850"/>
+<rect x="342.9" y="0.0" width="35.2" height="213.4" fill="#9A8F7C" fill-opacity="0.850"/>
+<rect x="457.1" y="0.0" width="35.2" height="213.4" fill="#9A8F7C" fill-opacity="0.850"/>
+<rect x="571.4" y="0.0" width="35.2" height="213.4" fill="#9A8F7C" fill-opacity="0.850"/>
+<rect x="685.7" y="0.0" width="35.2" height="213.4" fill="#9A8F7C" fill-opacity="0.850"/>
+<rect x="800.0" y="0.0" width="35.2" height="213.4" fill="#9A8F7C" fill-opacity="0.850"/>
+<rect x="914.3" y="0.0" width="35.2" height="213.4" fill="#9A8F7C" fill-opacity="0.850"/>
+<rect x="1028.6" y="0.0" width="35.2" height="213.4" fill="#9A8F7C" fill-opacity="0.850"/>
+<rect x="1142.9" y="0.0" width="35.2" height="213.4" fill="#9A8F7C" fill-opacity="0.850"/>
+<rect x="1257.1" y="0.0" width="35.2" height="213.4" fill="#9A8F7C" fill-opacity="0.850"/>
+<rect x="1371.4" y="0.0" width="35.2" height="213.4" fill="#9A8F7C" fill-opacity="0.850"/>
+<rect x="1485.7" y="0.0" width="35.2" height="213.4" fill="#9A8F7C" fill-opacity="0.850"/>
+<rect x="0.0" y="208.1" width="1600.0" height="12.8" fill="#2F3236"/>
+<line x1="832.0" y1="213.4" x2="832.0" y2="320.1" stroke="#2F3236" stroke-width="2.00" stroke-opacity="0.800" stroke-linecap="butt"/>
+<circle cx="832.0" cy="346.8" r="25.6" fill="#F4E2B8" fill-opacity="0.95"/>
+<circle cx="832.0" cy="346.8" r="112.0" fill="#F4E2B8" fill-opacity="0.10"/>
+<rect x="0.0" y="213.4" width="480.0" height="640.2" fill="#5A5D61" fill-opacity="0.600"/>
+<rect x="0.0" y="213.4" width="25.6" height="640.2" fill="#9A8F7C" fill-opacity="0.800"/>
+<rect x="96.0" y="213.4" width="25.6" height="640.2" fill="#9A8F7C" fill-opacity="0.800"/>
+<rect x="192.0" y="213.4" width="25.6" height="640.2" fill="#9A8F7C" fill-opacity="0.800"/>
+<rect x="288.0" y="213.4" width="25.6" height="640.2" fill="#9A8F7C" fill-opacity="0.800"/>
+<rect x="384.0" y="213.4" width="25.6" height="640.2" fill="#9A8F7C" fill-opacity="0.800"/>
+<rect x="992.0" y="746.9" width="224.0" height="106.7" fill="#8A7E6B" fill-opacity="0.900"/>
+<line x1="992.0" y1="794.9" x2="1216.0" y2="794.9" stroke="#6B6154" stroke-width="2.00" stroke-opacity="0.600" stroke-linecap="butt"/>
+<rect x="1248.0" y="693.5" width="160.0" height="160.1" fill="#8A7E6B" fill-opacity="0.900"/>
+<line x1="1248.0" y1="765.6" x2="1408.0" y2="765.6" stroke="#6B6154" stroke-width="2.00" stroke-opacity="0.600" stroke-linecap="butt"/>
+<rect x="1120.0" y="746.9" width="128.0" height="106.7" fill="#8A7E6B" fill-opacity="0.900"/>
+<line x1="1120.0" y1="794.9" x2="1248.0" y2="794.9" stroke="#6B6154" stroke-width="2.00" stroke-opacity="0.600" stroke-linecap="butt"/>
+<rect x="0.0" y="853.6" width="1600.0" height="213.4" fill="#000" fill-opacity="0.080"/>
+<text x="1581" y="1048" text-anchor="end" font-family="Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="1.7" fill="#FFFFFF" fill-opacity="0.34">PLACEHOLDER</text>
+  <rect width="1600" height="1067" filter="url(#grf8169)" opacity="0.5" style="mix-blend-mode:overlay"/>
+  <rect width="1600" height="1067" fill="url(#vgf8169)"/>
 </svg>

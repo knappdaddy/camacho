@@ -1,50 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1067" width="1600" height="1067"
-     role="img" aria-label="Lead Paint Abatement — placeholder image">
+     role="img" aria-label="After: Lead paint abatement — illustrated placeholder">
   <defs>
-    <linearGradient id="wall-victorian-lead-after" x1="0" y1="0" x2="0.3" y2="1">
-      <stop offset="0" stop-color="#4A5560"/><stop offset="1" stop-color="#2E3842"/>
-    </linearGradient>
-    <linearGradient id="floor-victorian-lead-after" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#232B33" stop-opacity="0.92"/>
-      <stop offset="1" stop-color="#232B33"/>
-    </linearGradient>
-    <linearGradient id="pane-victorian-lead-after" x1="0" y1="0" x2="0.4" y2="1">
-      <stop offset="0" stop-color="#FFC98E" stop-opacity="0.85"/>
-      <stop offset="1" stop-color="#FFC98E" stop-opacity="0.12"/>
-    </linearGradient>
-    <linearGradient id="shaft-victorian-lead-after" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFC98E" stop-opacity="0.34"/>
-      <stop offset="1" stop-color="#FFC98E" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="lamp-victorian-lead-after" cx="0.439" cy="0.382" r="0.62">
-      <stop offset="0" stop-color="#EFA25E" stop-opacity="0.30"/>
-      <stop offset="1" stop-color="#EFA25E" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="vig-victorian-lead-after" cx="0.5" cy="0.48" r="0.78">
-      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+<linearGradient id="sdp4994" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efece5" stop-opacity="1"/><stop offset="1" stop-color="#d5d2ca" stop-opacity="1"/></linearGradient>
+<filter id="grp4994" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer>
+    </filter>
+<radialGradient id="vgp4994" cx="0.5" cy="0.48" r="0.76">
+      <stop offset="0.42" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.42"/>
     </radialGradient>
   </defs>
-
-  <rect width="1600" height="1067" fill="url(#wall-victorian-lead-after)"/>
-  <rect x="379" y="358" width="128" height="300" rx="4" fill="url(#pane-victorian-lead-after)" fill-opacity="0.33"/><rect x="379" y="358" width="128" height="300" rx="4" fill="none" stroke="#FFC98E" stroke-opacity="0.18" stroke-width="1.9"/><rect x="737" y="255" width="198" height="420" rx="4" fill="url(#pane-victorian-lead-after)" fill-opacity="0.29"/><rect x="737" y="255" width="198" height="420" rx="4" fill="none" stroke="#FFC98E" stroke-opacity="0.16" stroke-width="1.9"/><rect x="1106" y="180" width="196" height="435" rx="4" fill="url(#pane-victorian-lead-after)" fill-opacity="0.23"/><rect x="1106" y="180" width="196" height="435" rx="4" fill="none" stroke="#FFC98E" stroke-opacity="0.13" stroke-width="1.9"/>
-  <rect y="742" width="1600" height="325" fill="url(#floor-victorian-lead-after)"/>
-  <rect y="742" width="1600" height="1.9" fill="#FFC98E" fill-opacity="0.18"/>
-  <path d="M574 742 L862 742 L1246 1067 L222 1067 Z" fill="url(#shaft-victorian-lead-after)" fill-opacity="0.5"/>
-  <rect width="1600" height="1067" fill="url(#lamp-victorian-lead-after)"/>
-  <rect width="1600" height="1067" fill="url(#vig-victorian-lead-after)"/>
-  <text x="800" y="534" text-anchor="middle"
-        font-family="Inter, Helvetica, Arial, sans-serif" font-size="40"
-        font-weight="650" fill="#FFFFFF" fill-opacity="0.90">Lead Paint Abatement</text>
-  <text x="800" y="583" text-anchor="middle"
-        font-family="Inter, Helvetica, Arial, sans-serif" font-size="24"
-        font-weight="500" letter-spacing="2.4"
-        fill="#FFFFFF" fill-opacity="0.40">REPLACE WITH PHOTO</text>
-  <g>
-    <rect x="38" y="38" width="136" height="59"
-          rx="30" fill="#EFA25E" fill-opacity="0.95"/>
-    <text x="106" y="77" text-anchor="middle"
-          font-family="Inter, Helvetica, Arial, sans-serif" font-size="25"
-          font-weight="700" letter-spacing="3.1" fill="#0B0E12">AFTER</text>
-  </g>
+<rect x="0.0" y="0.0" width="1600.0" height="1067.0" fill="url(#sdp4994)"/>
+<line x1="0.0" y1="88.9" x2="1600.0" y2="88.9" stroke="#000" stroke-width="2.20" stroke-opacity="0.130" stroke-linecap="butt"/>
+<line x1="0.0" y1="91.4" x2="1600.0" y2="91.4" stroke="#FFFFFF" stroke-width="2.00" stroke-opacity="0.100" stroke-linecap="butt"/>
+<line x1="0.0" y1="177.8" x2="1600.0" y2="177.8" stroke="#000" stroke-width="2.20" stroke-opacity="0.130" stroke-linecap="butt"/>
+<line x1="0.0" y1="180.3" x2="1600.0" y2="180.3" stroke="#FFFFFF" stroke-width="2.00" stroke-opacity="0.100" stroke-linecap="butt"/>
+<line x1="0.0" y1="266.8" x2="1600.0" y2="266.8" stroke="#000" stroke-width="2.20" stroke-opacity="0.130" stroke-linecap="butt"/>
+<line x1="0.0" y1="269.2" x2="1600.0" y2="269.2" stroke="#FFFFFF" stroke-width="2.00" stroke-opacity="0.100" stroke-linecap="butt"/>
+<line x1="0.0" y1="355.7" x2="1600.0" y2="355.7" stroke="#000" stroke-width="2.20" stroke-opacity="0.130" stroke-linecap="butt"/>
+<line x1="0.0" y1="358.2" x2="1600.0" y2="358.2" stroke="#FFFFFF" stroke-width="2.00" stroke-opacity="0.100" stroke-linecap="butt"/>
+<line x1="0.0" y1="444.6" x2="1600.0" y2="444.6" stroke="#000" stroke-width="2.20" stroke-opacity="0.130" stroke-linecap="butt"/>
+<line x1="0.0" y1="447.1" x2="1600.0" y2="447.1" stroke="#FFFFFF" stroke-width="2.00" stroke-opacity="0.100" stroke-linecap="butt"/>
+<line x1="0.0" y1="533.5" x2="1600.0" y2="533.5" stroke="#000" stroke-width="2.20" stroke-opacity="0.130" stroke-linecap="butt"/>
+<line x1="0.0" y1="536.0" x2="1600.0" y2="536.0" stroke="#FFFFFF" stroke-width="2.00" stroke-opacity="0.100" stroke-linecap="butt"/>
+<line x1="0.0" y1="622.4" x2="1600.0" y2="622.4" stroke="#000" stroke-width="2.20" stroke-opacity="0.130" stroke-linecap="butt"/>
+<line x1="0.0" y1="624.9" x2="1600.0" y2="624.9" stroke="#FFFFFF" stroke-width="2.00" stroke-opacity="0.100" stroke-linecap="butt"/>
+<line x1="0.0" y1="711.3" x2="1600.0" y2="711.3" stroke="#000" stroke-width="2.20" stroke-opacity="0.130" stroke-linecap="butt"/>
+<line x1="0.0" y1="713.8" x2="1600.0" y2="713.8" stroke="#FFFFFF" stroke-width="2.00" stroke-opacity="0.100" stroke-linecap="butt"/>
+<line x1="0.0" y1="800.2" x2="1600.0" y2="800.2" stroke="#000" stroke-width="2.20" stroke-opacity="0.130" stroke-linecap="butt"/>
+<line x1="0.0" y1="802.8" x2="1600.0" y2="802.8" stroke="#FFFFFF" stroke-width="2.00" stroke-opacity="0.100" stroke-linecap="butt"/>
+<line x1="0.0" y1="889.2" x2="1600.0" y2="889.2" stroke="#000" stroke-width="2.20" stroke-opacity="0.130" stroke-linecap="butt"/>
+<line x1="0.0" y1="891.7" x2="1600.0" y2="891.7" stroke="#FFFFFF" stroke-width="2.00" stroke-opacity="0.100" stroke-linecap="butt"/>
+<line x1="0.0" y1="978.1" x2="1600.0" y2="978.1" stroke="#000" stroke-width="2.20" stroke-opacity="0.130" stroke-linecap="butt"/>
+<line x1="0.0" y1="980.6" x2="1600.0" y2="980.6" stroke="#FFFFFF" stroke-width="2.00" stroke-opacity="0.100" stroke-linecap="butt"/>
+<line x1="0.0" y1="1067.0" x2="1600.0" y2="1067.0" stroke="#000" stroke-width="2.20" stroke-opacity="0.130" stroke-linecap="butt"/>
+<line x1="0.0" y1="1069.5" x2="1600.0" y2="1069.5" stroke="#FFFFFF" stroke-width="2.00" stroke-opacity="0.100" stroke-linecap="butt"/>
+<rect x="424.0" y="133.4" width="816.0" height="672.2" fill="#FFFFFF"/>
+<rect x="480.0" y="170.7" width="704.0" height="597.5" fill="#8FB3C6" fill-opacity="0.900"/>
+<rect x="480.0" y="170.7" width="704.0" height="268.9" fill="#FFFFFF" fill-opacity="0.120"/>
+<line x1="832.0" y1="170.7" x2="832.0" y2="768.2" stroke="#FFFFFF" stroke-width="35.20" stroke-opacity="1.000" stroke-linecap="butt"/>
+<line x1="480.0" y1="469.5" x2="1184.0" y2="469.5" stroke="#FFFFFF" stroke-width="26.89" stroke-opacity="1.000" stroke-linecap="butt"/>
+<rect x="384.0" y="805.6" width="896.0" height="48.0" fill="#FFFFFF"/>
+<rect x="0.0" y="0.0" width="1600.0" height="1067.0" fill="#FFFFFF" fill-opacity="0.100"/>
+<text x="1581" y="1048" text-anchor="end" font-family="Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="1.7" fill="#FFFFFF" fill-opacity="0.34">PLACEHOLDER</text>
+  <rect width="1600" height="1067" filter="url(#grp4994)" opacity="0.5" style="mix-blend-mode:overlay"/>
+  <rect width="1600" height="1067" fill="url(#vgp4994)"/>
 </svg>

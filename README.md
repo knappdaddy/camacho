@@ -42,8 +42,16 @@ pattern to copy is `services.html`.
 
 **This is the main thing to do.** The site is built photography-first: the hero,
 the service tiles, the section bands and the page headers are all photographs.
-Every one is currently a generated placeholder, and the layout will only look as
-good as the photos you put in it.
+
+Right now every one is a **drawn illustration**, not a photo — a moldy basement
+wall, a rotted deck, a stained ceiling, a dated kitchen. They are there so the
+layout can be judged with something close to real content, and so the
+before/after sliders demonstrate an actual transformation. Each pair is drawn
+from the same camera with the same geometry, which is exactly what a real pair
+needs to do.
+
+They are deliberately obvious once you look — flat vector, and each carries a
+small `PLACEHOLDER` tag in the corner. **Do not launch with them.**
 
 ### The shot list
 
@@ -235,17 +243,25 @@ Notes for whoever maintains this:
   FAQ structured data. Update the details in those `<script type="application/ld+json">`
   blocks when the real business information goes in.
 
-Regenerate the placeholder images (if you add a project before you have photos):
+Regenerate the placeholder illustrations (if you add a project before you have
+photos):
 
 ```bash
-python3 tools/make-placeholders.py
+python3 tools/make-placeholders.py            # with the PLACEHOLDER corner tag
+python3 tools/make-placeholders.py --clean    # without it
 ```
+
+`tools/make-placeholders.py` holds a small scene library — kitchen, basement,
+deck, yard, ceiling leak, painted trim, house elevation, job site — each drawn
+in a "before" and an "after" condition from identical geometry. To add a scene
+for a new project, copy the nearest `scene_*` function and add a row to
+`PROJECTS` at the bottom of the file.
 
 ---
 
 ## Pre-launch checklist
 
-- [ ] Real photos in, `alt` text written
+- [ ] Real photos in, replacing every illustration; `alt` text written
 - [ ] Logo replaced if a designer produces a custom identity
 - [ ] Phone, email, address, licence numbers replaced everywhere
 - [ ] Real reviews with permission; statistics verified

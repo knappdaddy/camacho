@@ -1,43 +1,74 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1200" width="2400" height="1200"
-     role="img" aria-label="Finished Interior — placeholder image">
+     role="img" aria-label="Finished interior — illustrated placeholder">
   <defs>
-    <linearGradient id="wall-band-quote" x1="0" y1="0" x2="0.3" y2="1">
-      <stop offset="0" stop-color="#2A343E"/><stop offset="1" stop-color="#151C22"/>
-    </linearGradient>
-    <linearGradient id="floor-band-quote" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0E1318" stop-opacity="0.92"/>
-      <stop offset="1" stop-color="#0E1318"/>
-    </linearGradient>
-    <linearGradient id="pane-band-quote" x1="0" y1="0" x2="0.4" y2="1">
-      <stop offset="0" stop-color="#F0A867" stop-opacity="0.85"/>
-      <stop offset="1" stop-color="#F0A867" stop-opacity="0.12"/>
-    </linearGradient>
-    <linearGradient id="shaft-band-quote" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F0A867" stop-opacity="0.34"/>
-      <stop offset="1" stop-color="#F0A867" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="lamp-band-quote" cx="0.643" cy="0.356" r="0.62">
-      <stop offset="0" stop-color="#D9884A" stop-opacity="0.30"/>
-      <stop offset="1" stop-color="#D9884A" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="vig-band-quote" cx="0.5" cy="0.48" r="0.78">
-      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+<linearGradient id="walll3523" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9E3D9" stop-opacity="1"/><stop offset="1" stop-color="#CFC7BA" stop-opacity="1"/></linearGradient>
+<linearGradient id="flrl3523" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B0885C" stop-opacity="1"/><stop offset="1" stop-color="#8A6944" stop-opacity="1"/></linearGradient>
+<filter id="grl3523" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer>
+    </filter>
+<radialGradient id="vgl3523" cx="0.5" cy="0.48" r="0.76">
+      <stop offset="0.42" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.42"/>
     </radialGradient>
   </defs>
-
-  <rect width="2400" height="1200" fill="url(#wall-band-quote)"/>
-  <rect x="451" y="230" width="297" height="396" rx="4" fill="url(#pane-band-quote)" fill-opacity="0.28"/><rect x="451" y="230" width="297" height="396" rx="4" fill="none" stroke="#F0A867" stroke-opacity="0.16" stroke-width="2.1"/><rect x="1086" y="179" width="249" height="439" rx="4" fill="url(#pane-band-quote)" fill-opacity="0.35"/><rect x="1086" y="179" width="249" height="439" rx="4" fill="none" stroke="#F0A867" stroke-opacity="0.19" stroke-width="2.1"/><rect x="1754" y="257" width="187" height="377" rx="4" fill="url(#pane-band-quote)" fill-opacity="0.27"/><rect x="1754" y="257" width="187" height="377" rx="4" fill="none" stroke="#F0A867" stroke-opacity="0.15" stroke-width="2.1"/>
-  <rect y="776" width="2400" height="424" fill="url(#floor-band-quote)"/>
-  <rect y="776" width="2400" height="2.1" fill="#F0A867" fill-opacity="0.18"/>
-  <path d="M1352 776 L1784 776 L2360 1200 L824 1200 Z" fill="url(#shaft-band-quote)" fill-opacity="0.5"/>
-  <rect width="2400" height="1200" fill="url(#lamp-band-quote)"/>
-  <rect width="2400" height="1200" fill="url(#vig-band-quote)"/>
-  <text x="1200" y="600" text-anchor="middle"
-        font-family="Inter, Helvetica, Arial, sans-serif" font-size="45"
-        font-weight="650" fill="#FFFFFF" fill-opacity="0.90">Finished Interior</text>
-  <text x="1200" y="656" text-anchor="middle"
-        font-family="Inter, Helvetica, Arial, sans-serif" font-size="27"
-        font-weight="500" letter-spacing="2.7"
-        fill="#FFFFFF" fill-opacity="0.40">REPLACE WITH PHOTO</text>
+<rect x="0.0" y="0.0" width="2400.0" height="840.0" fill="url(#walll3523)"/>
+<rect x="0.0" y="840.0" width="2400.0" height="360.0" fill="url(#flrl3523)"/>
+<rect x="0.0" y="813.6" width="2400.0" height="26.4" fill="#FFFFFF" fill-opacity="0.850"/>
+<polygon points="0.0,0.0 336.0,0.0 240.0,1200.0 0.0,1200.0" fill="#000" fill-opacity="0.130"/>
+<polygon points="2400.0,0.0 2064.0,0.0 2160.0,1200.0 2400.0,1200.0" fill="#000" fill-opacity="0.080"/>
+<polygon points="672.0,840.0 1728.0,840.0 2160.0,1200.0 240.0,1200.0" fill="#FFF3DF" fill-opacity="0.130"/>
+<rect x="816.0" y="240.0" width="768.0" height="600.0" fill="#f0ede6"/>
+<rect x="816.0" y="240.0" width="768.0" height="600.0" fill="#000" fill-opacity="0.050"/>
+<rect x="1000.3" y="528.0" width="399.4" height="312.0" fill="#22262B"/>
+<rect x="1040.3" y="659.0" width="319.5" height="162.2" fill="#E2743B" fill-opacity="0.750"/>
+<rect x="1088.2" y="709.0" width="223.6" height="112.3" fill="#F0C089" fill-opacity="0.850"/>
+<ellipse cx="1200.0" cy="746.4" rx="359.4" ry="218.4" fill="#F0C089" fill-opacity="0.13"/>
+<rect x="777.6" y="474.0" width="844.8" height="33.6" fill="#FFFFFF"/>
+<rect x="777.6" y="507.6" width="844.8" height="9.6" fill="#000" fill-opacity="0.180"/>
+<rect x="69.6" y="186.7" width="580.8" height="466.6" fill="#FFFFFF" fill-opacity="0.950" rx="2.0"/>
+<rect x="96.0" y="204.0" width="528.0" height="432.0" fill="#FFF3DF" fill-opacity="0.920"/>
+<rect x="96.0" y="204.0" width="528.0" height="216.0" fill="#FFFFFF" fill-opacity="0.180"/>
+<line x1="360.0" y1="204.0" x2="360.0" y2="636.0" stroke="#FFFFFF" stroke-width="26.40" stroke-opacity="0.900" stroke-linecap="butt"/>
+<line x1="96.0" y1="420.0" x2="624.0" y2="420.0" stroke="#FFFFFF" stroke-width="19.44" stroke-opacity="0.900" stroke-linecap="butt"/>
+<rect x="1749.6" y="186.7" width="580.8" height="466.6" fill="#FFFFFF" fill-opacity="0.950" rx="2.0"/>
+<rect x="1776.0" y="204.0" width="528.0" height="432.0" fill="#FFF3DF" fill-opacity="0.920"/>
+<rect x="1776.0" y="204.0" width="528.0" height="216.0" fill="#FFFFFF" fill-opacity="0.180"/>
+<line x1="2040.0" y1="204.0" x2="2040.0" y2="636.0" stroke="#FFFFFF" stroke-width="26.40" stroke-opacity="0.900" stroke-linecap="butt"/>
+<line x1="1776.0" y1="420.0" x2="2304.0" y2="420.0" stroke="#FFFFFF" stroke-width="19.44" stroke-opacity="0.900" stroke-linecap="butt"/>
+<ellipse cx="1200.0" cy="1080.0" rx="864.0" ry="90.0" fill="#E2743B" fill-opacity="0.16"/>
+<line x1="0.0" y1="885.0" x2="2400.0" y2="885.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="0.0" y1="930.0" x2="2400.0" y2="930.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="0.0" y1="975.0" x2="2400.0" y2="975.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="0.0" y1="1020.0" x2="2400.0" y2="1020.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="0.0" y1="1065.0" x2="2400.0" y2="1065.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="0.0" y1="1110.0" x2="2400.0" y2="1110.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="0.0" y1="1155.0" x2="2400.0" y2="1155.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="0.0" y1="1200.0" x2="2400.0" y2="1200.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.080" stroke-linecap="butt"/>
+<rect x="693.1" y="795.6" width="1013.8" height="114.0" fill="#b7a994" rx="8.0"/>
+<rect x="756.5" y="807.6" width="401.3" height="86.4" fill="#cfc1ab" rx="6.0"/>
+<rect x="1178.9" y="807.6" width="401.3" height="86.4" fill="#cfc1ab" rx="6.0"/>
+<rect x="672.0" y="897.6" width="1056.0" height="66.0" fill="#c3b49d" rx="5.0"/>
+<rect x="628.8" y="831.6" width="100.8" height="132.0" fill="#a29683" rx="6.0"/>
+<rect x="1670.4" y="831.6" width="100.8" height="132.0" fill="#a29683" rx="6.0"/>
+<rect x="714.2" y="963.6" width="28.8" height="26.4" fill="#5A4A36"/>
+<rect x="1664.6" y="963.6" width="28.8" height="26.4" fill="#5A4A36"/>
+<rect x="777.6" y="823.2" width="105.6" height="66.0" fill="#E2743B" fill-opacity="0.750" rx="5.0"/>
+<rect x="1580.2" y="823.2" width="105.6" height="66.0" fill="#E2743B" fill-opacity="0.750" rx="5.0"/>
+<rect x="960.0" y="1146.0" width="480.0" height="19.2" fill="#8A6A45" rx="3.0"/>
+<rect x="996.0" y="1165.2" width="28.8" height="30.0" fill="#7A5C3C"/>
+<rect x="1375.2" y="1165.2" width="28.8" height="30.0" fill="#7A5C3C"/>
+<polygon points="2160.0,948.0 2280.0,948.0 2258.4,1164.0 2181.6,1164.0" fill="#B08258"/>
+<ellipse cx="2230.2" cy="882.6" rx="31.2" ry="36.0" fill="#4E7A52" transform="rotate(8 2230.2 882.6)"/>
+<ellipse cx="2265.0" cy="894.5" rx="31.2" ry="36.0" fill="#4E7A52" transform="rotate(36 2265.0 894.5)"/>
+<ellipse cx="2225.3" cy="882.2" rx="31.2" ry="36.0" fill="#4E7A52" transform="rotate(4 2225.3 882.2)"/>
+<ellipse cx="2279.9" cy="906.7" rx="31.2" ry="36.0" fill="#4E7A52" transform="rotate(51 2279.9 906.7)"/>
+<ellipse cx="2238.8" cy="884.0" rx="31.2" ry="36.0" fill="#4E7A52" transform="rotate(14 2238.8 884.0)"/>
+<ellipse cx="2219.1" cy="882.0" rx="31.2" ry="36.0" fill="#4E7A52" transform="rotate(-1 2219.1 882.0)"/>
+<ellipse cx="2249.4" cy="887.0" rx="31.2" ry="36.0" fill="#4E7A52" transform="rotate(22 2249.4 887.0)"/>
+<ellipse cx="2215.6" cy="882.1" rx="31.2" ry="36.0" fill="#4E7A52" transform="rotate(-3 2215.6 882.1)"/>
+<text x="2379" y="1179" text-anchor="end" font-family="Inter, Helvetica, Arial, sans-serif" font-size="23" font-weight="600" letter-spacing="1.9" fill="#FFFFFF" fill-opacity="0.34">PLACEHOLDER</text>
+  <rect width="2400" height="1200" filter="url(#grl3523)" opacity="0.5" style="mix-blend-mode:overlay"/>
+  <rect width="2400" height="1200" fill="url(#vgl3523)"/>
 </svg>

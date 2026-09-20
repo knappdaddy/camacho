@@ -1,43 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500"
-     role="img" aria-label="General Contracting — placeholder image">
+     role="img" aria-label="General contracting — illustrated placeholder">
   <defs>
-    <linearGradient id="wall-tile-general" x1="0" y1="0" x2="0.3" y2="1">
-      <stop offset="0" stop-color="#8A97A5"/><stop offset="1" stop-color="#5A6470"/>
-    </linearGradient>
-    <linearGradient id="floor-tile-general" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#46505B" stop-opacity="0.92"/>
-      <stop offset="1" stop-color="#46505B"/>
-    </linearGradient>
-    <linearGradient id="pane-tile-general" x1="0" y1="0" x2="0.4" y2="1">
-      <stop offset="0" stop-color="#FFD9A8" stop-opacity="0.85"/>
-      <stop offset="1" stop-color="#FFD9A8" stop-opacity="0.12"/>
-    </linearGradient>
-    <linearGradient id="shaft-tile-general" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFD9A8" stop-opacity="0.34"/>
-      <stop offset="1" stop-color="#FFD9A8" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="lamp-tile-general" cx="0.364" cy="0.360" r="0.62">
-      <stop offset="0" stop-color="#E8A263" stop-opacity="0.30"/>
-      <stop offset="1" stop-color="#E8A263" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="vig-tile-general" cx="0.5" cy="0.48" r="0.78">
-      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+<linearGradient id="wallj5962" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DCD5C8" stop-opacity="1"/><stop offset="1" stop-color="#B8B0A2" stop-opacity="1"/></linearGradient>
+<filter id="grj5962" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer>
+    </filter>
+<radialGradient id="vgj5962" cx="0.5" cy="0.48" r="0.76">
+      <stop offset="0.42" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.42"/>
     </radialGradient>
   </defs>
-
-  <rect width="1200" height="1500" fill="url(#wall-tile-general)"/>
-  <rect x="181" y="486" width="73" height="345" rx="4" fill="url(#pane-tile-general)" fill-opacity="0.23"/><rect x="181" y="486" width="73" height="345" rx="4" fill="none" stroke="#FFD9A8" stroke-opacity="0.13" stroke-width="2.1"/><rect x="424" y="278" width="84" height="545" rx="4" fill="url(#pane-tile-general)" fill-opacity="0.18"/><rect x="424" y="278" width="84" height="545" rx="4" fill="none" stroke="#FFD9A8" stroke-opacity="0.10" stroke-width="2.1"/><rect x="682" y="350" width="99" height="467" rx="4" fill="url(#pane-tile-general)" fill-opacity="0.16"/><rect x="682" y="350" width="99" height="467" rx="4" fill="none" stroke="#FFD9A8" stroke-opacity="0.09" stroke-width="2.1"/><rect x="896" y="487" width="104" height="352" rx="4" fill="url(#pane-tile-general)" fill-opacity="0.41"/><rect x="896" y="487" width="104" height="352" rx="4" fill="none" stroke="#FFD9A8" stroke-opacity="0.23" stroke-width="2.1"/>
-  <rect y="982" width="1200" height="518" fill="url(#floor-tile-general)"/>
-  <rect y="982" width="1200" height="2.1" fill="#FFD9A8" fill-opacity="0.18"/>
-  <path d="M341 982 L557 982 L845 1500 L77 1500 Z" fill="url(#shaft-tile-general)" fill-opacity="0.5"/>
-  <rect width="1200" height="1500" fill="url(#lamp-tile-general)"/>
-  <rect width="1200" height="1500" fill="url(#vig-tile-general)"/>
-  <text x="600" y="750" text-anchor="middle"
-        font-family="Inter, Helvetica, Arial, sans-serif" font-size="45"
-        font-weight="650" fill="#FFFFFF" fill-opacity="0.90">General Contracting</text>
-  <text x="600" y="806" text-anchor="middle"
-        font-family="Inter, Helvetica, Arial, sans-serif" font-size="27"
-        font-weight="500" letter-spacing="2.7"
-        fill="#FFFFFF" fill-opacity="0.40">REPLACE WITH PHOTO</text>
+<rect x="0.0" y="0.0" width="1200.0" height="1200.0" fill="url(#wallj5962)"/>
+<rect x="0.0" y="1200.0" width="1200.0" height="300.0" fill="#9A8F7C"/>
+<rect x="0.0" y="150.0" width="24.0" height="1050.0" fill="#C9AE82" fill-opacity="0.900"/>
+<rect x="133.3" y="150.0" width="24.0" height="1050.0" fill="#C9AE82" fill-opacity="0.900"/>
+<rect x="266.7" y="150.0" width="24.0" height="1050.0" fill="#C9AE82" fill-opacity="0.900"/>
+<rect x="400.0" y="150.0" width="24.0" height="1050.0" fill="#C9AE82" fill-opacity="0.900"/>
+<rect x="533.3" y="150.0" width="24.0" height="1050.0" fill="#C9AE82" fill-opacity="0.900"/>
+<rect x="666.7" y="150.0" width="24.0" height="1050.0" fill="#C9AE82" fill-opacity="0.900"/>
+<rect x="800.0" y="150.0" width="24.0" height="1050.0" fill="#C9AE82" fill-opacity="0.900"/>
+<rect x="933.3" y="150.0" width="24.0" height="1050.0" fill="#C9AE82" fill-opacity="0.900"/>
+<rect x="1066.7" y="150.0" width="24.0" height="1050.0" fill="#C9AE82" fill-opacity="0.900"/>
+<rect x="0.0" y="150.0" width="1200.0" height="33.0" fill="#C9AE82"/>
+<rect x="0.0" y="1170.0" width="1200.0" height="33.0" fill="#C9AE82"/>
+<polygon points="660.0,0.0 1104.0,0.0 888.0,1200.0 480.0,1200.0" fill="#FFFFFF" fill-opacity="0.100"/>
+<line x1="192.0" y1="210.0" x2="156.0" y2="1200.0" stroke="#C0C3C6" stroke-width="5.00" stroke-opacity="0.900" stroke-linecap="butt"/>
+<line x1="276.0" y1="210.0" x2="240.0" y2="1200.0" stroke="#C0C3C6" stroke-width="5.00" stroke-opacity="0.900" stroke-linecap="butt"/>
+<line x1="192.0" y1="270.0" x2="276.0" y2="270.0" stroke="#C0C3C6" stroke-width="4.00" stroke-opacity="0.900" stroke-linecap="butt"/>
+<line x1="186.0" y1="420.0" x2="270.0" y2="420.0" stroke="#C0C3C6" stroke-width="4.00" stroke-opacity="0.900" stroke-linecap="butt"/>
+<line x1="180.0" y1="570.0" x2="264.0" y2="570.0" stroke="#C0C3C6" stroke-width="4.00" stroke-opacity="0.900" stroke-linecap="butt"/>
+<line x1="174.0" y1="720.0" x2="258.0" y2="720.0" stroke="#C0C3C6" stroke-width="4.00" stroke-opacity="0.900" stroke-linecap="butt"/>
+<line x1="168.0" y1="870.0" x2="252.0" y2="870.0" stroke="#C0C3C6" stroke-width="4.00" stroke-opacity="0.900" stroke-linecap="butt"/>
+<line x1="162.0" y1="1020.0" x2="246.0" y2="1020.0" stroke="#C0C3C6" stroke-width="4.00" stroke-opacity="0.900" stroke-linecap="butt"/>
+<line x1="720.0" y1="1200.0" x2="672.0" y2="1470.0" stroke="#8A6A45" stroke-width="6.00" stroke-opacity="0.950" stroke-linecap="butt"/>
+<line x1="840.0" y1="1200.0" x2="888.0" y2="1470.0" stroke="#8A6A45" stroke-width="6.00" stroke-opacity="0.950" stroke-linecap="butt"/>
+<rect x="600.0" y="1170.0" width="384.0" height="37.5" fill="#C9AE82"/>
+<rect x="960.0" y="1050.0" width="120.0" height="150.0" fill="#E2743B" fill-opacity="0.900"/>
+<rect x="0.0" y="1200.0" width="1200.0" height="300.0" fill="#000" fill-opacity="0.060"/>
+<text x="1179" y="1479" text-anchor="end" font-family="Inter, Helvetica, Arial, sans-serif" font-size="23" font-weight="600" letter-spacing="1.9" fill="#FFFFFF" fill-opacity="0.34">PLACEHOLDER</text>
+  <rect width="1200" height="1500" filter="url(#grj5962)" opacity="0.5" style="mix-blend-mode:overlay"/>
+  <rect width="1200" height="1500" fill="url(#vgj5962)"/>
 </svg>

@@ -1,50 +1,109 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1067" width="1600" height="1067"
-     role="img" aria-label="Kitchen Gut &amp; Rebuild — placeholder image">
+     role="img" aria-label="After: Kitchen gut and rebuild — illustrated placeholder">
   <defs>
-    <linearGradient id="wall-hillside-kitchen-after" x1="0" y1="0" x2="0.3" y2="1">
-      <stop offset="0" stop-color="#4A5560"/><stop offset="1" stop-color="#2E3842"/>
-    </linearGradient>
-    <linearGradient id="floor-hillside-kitchen-after" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#232B33" stop-opacity="0.92"/>
-      <stop offset="1" stop-color="#232B33"/>
-    </linearGradient>
-    <linearGradient id="pane-hillside-kitchen-after" x1="0" y1="0" x2="0.4" y2="1">
-      <stop offset="0" stop-color="#FFC98E" stop-opacity="0.85"/>
-      <stop offset="1" stop-color="#FFC98E" stop-opacity="0.12"/>
-    </linearGradient>
-    <linearGradient id="shaft-hillside-kitchen-after" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFC98E" stop-opacity="0.34"/>
-      <stop offset="1" stop-color="#FFC98E" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="lamp-hillside-kitchen-after" cx="0.243" cy="0.369" r="0.62">
-      <stop offset="0" stop-color="#EFA25E" stop-opacity="0.30"/>
-      <stop offset="1" stop-color="#EFA25E" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="vig-hillside-kitchen-after" cx="0.5" cy="0.48" r="0.78">
-      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+<linearGradient id="wallk8366" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9E3D9" stop-opacity="1"/><stop offset="1" stop-color="#CFC7BA" stop-opacity="1"/></linearGradient>
+<linearGradient id="flrk8366" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B0885C" stop-opacity="1"/><stop offset="1" stop-color="#8A6944" stop-opacity="1"/></linearGradient>
+<filter id="grk8366" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer>
+    </filter>
+<radialGradient id="vgk8366" cx="0.5" cy="0.48" r="0.76">
+      <stop offset="0.42" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.42"/>
     </radialGradient>
   </defs>
-
-  <rect width="1600" height="1067" fill="url(#wall-hillside-kitchen-after)"/>
-  <rect x="380" y="347" width="221" height="277" rx="4" fill="url(#pane-hillside-kitchen-after)" fill-opacity="0.23"/><rect x="380" y="347" width="221" height="277" rx="4" fill="none" stroke="#FFC98E" stroke-opacity="0.13" stroke-width="1.9"/><rect x="957" y="286" width="238" height="314" rx="4" fill="url(#pane-hillside-kitchen-after)" fill-opacity="0.29"/><rect x="957" y="286" width="238" height="314" rx="4" fill="none" stroke="#FFC98E" stroke-opacity="0.16" stroke-width="1.9"/>
-  <rect y="715" width="1600" height="352" fill="url(#floor-hillside-kitchen-after)"/>
-  <rect y="715" width="1600" height="1.9" fill="#FFC98E" fill-opacity="0.18"/>
-  <path d="M260 715 L548 715 L932 1067 L-92 1067 Z" fill="url(#shaft-hillside-kitchen-after)" fill-opacity="0.5"/>
-  <rect width="1600" height="1067" fill="url(#lamp-hillside-kitchen-after)"/>
-  <rect width="1600" height="1067" fill="url(#vig-hillside-kitchen-after)"/>
-  <text x="800" y="534" text-anchor="middle"
-        font-family="Inter, Helvetica, Arial, sans-serif" font-size="40"
-        font-weight="650" fill="#FFFFFF" fill-opacity="0.90">Kitchen Gut &amp; Rebuild</text>
-  <text x="800" y="583" text-anchor="middle"
-        font-family="Inter, Helvetica, Arial, sans-serif" font-size="24"
-        font-weight="500" letter-spacing="2.4"
-        fill="#FFFFFF" fill-opacity="0.40">REPLACE WITH PHOTO</text>
-  <g>
-    <rect x="38" y="38" width="136" height="59"
-          rx="30" fill="#EFA25E" fill-opacity="0.95"/>
-    <text x="106" y="77" text-anchor="middle"
-          font-family="Inter, Helvetica, Arial, sans-serif" font-size="25"
-          font-weight="700" letter-spacing="3.1" fill="#0B0E12">AFTER</text>
-  </g>
+<rect x="0.0" y="0.0" width="1600.0" height="746.9" fill="url(#wallk8366)"/>
+<rect x="0.0" y="746.9" width="1600.0" height="320.1" fill="url(#flrk8366)"/>
+<rect x="0.0" y="723.4" width="1600.0" height="23.5" fill="#FFFFFF" fill-opacity="0.850"/>
+<polygon points="0.0,0.0 224.0,0.0 160.0,1067.0 0.0,1067.0" fill="#000" fill-opacity="0.130"/>
+<polygon points="1600.0,0.0 1376.0,0.0 1440.0,1067.0 1600.0,1067.0" fill="#000" fill-opacity="0.080"/>
+<polygon points="448.0,746.9 1152.0,746.9 1440.0,1067.0 160.0,1067.0" fill="#FFF3DF" fill-opacity="0.130"/>
+<rect x="80.0" y="160.0" width="848.0" height="224.1" fill="#F4F1EB"/>
+<rect x="93.6" y="182.5" width="142.5" height="179.3" fill="#e3e0db"/>
+<rect x="100.4" y="191.4" width="128.9" height="161.3" fill="#f5f2ed"/>
+<rect x="202.1" y="299.0" width="27.1" height="7.8" fill="#C9A227" fill-opacity="0.900" rx="2.0"/>
+<line x1="80.0" y1="160.0" x2="80.0" y2="384.1" stroke="#000" stroke-width="1.20" stroke-opacity="0.160" stroke-linecap="butt"/>
+<rect x="263.2" y="182.5" width="142.5" height="179.3" fill="#e3e0db"/>
+<rect x="270.0" y="191.4" width="128.9" height="161.3" fill="#f5f2ed"/>
+<rect x="371.7" y="299.0" width="27.1" height="7.8" fill="#C9A227" fill-opacity="0.900" rx="2.0"/>
+<line x1="249.6" y1="160.0" x2="249.6" y2="384.1" stroke="#000" stroke-width="1.20" stroke-opacity="0.160" stroke-linecap="butt"/>
+<rect x="432.8" y="182.5" width="142.5" height="179.3" fill="#e3e0db"/>
+<rect x="439.6" y="191.4" width="128.9" height="161.3" fill="#f5f2ed"/>
+<rect x="541.3" y="299.0" width="27.1" height="7.8" fill="#C9A227" fill-opacity="0.900" rx="2.0"/>
+<line x1="419.2" y1="160.0" x2="419.2" y2="384.1" stroke="#000" stroke-width="1.20" stroke-opacity="0.160" stroke-linecap="butt"/>
+<rect x="602.4" y="182.5" width="142.5" height="179.3" fill="#e3e0db"/>
+<rect x="609.2" y="191.4" width="128.9" height="161.3" fill="#f5f2ed"/>
+<rect x="710.9" y="299.0" width="27.1" height="7.8" fill="#C9A227" fill-opacity="0.900" rx="2.0"/>
+<line x1="588.8" y1="160.0" x2="588.8" y2="384.1" stroke="#000" stroke-width="1.20" stroke-opacity="0.160" stroke-linecap="butt"/>
+<rect x="772.0" y="182.5" width="142.5" height="179.3" fill="#e3e0db"/>
+<rect x="778.8" y="191.4" width="128.9" height="161.3" fill="#f5f2ed"/>
+<rect x="880.5" y="299.0" width="27.1" height="7.8" fill="#C9A227" fill-opacity="0.900" rx="2.0"/>
+<line x1="758.4" y1="160.0" x2="758.4" y2="384.1" stroke="#000" stroke-width="1.20" stroke-opacity="0.160" stroke-linecap="butt"/>
+<rect x="80.0" y="384.1" width="848.0" height="10.7" fill="#000" fill-opacity="0.200"/>
+<polygon points="436.2,384.1 644.2,384.1 612.2,437.5 468.2,437.5" fill="#B9BCC0"/>
+<rect x="80.0" y="396.9" width="848.0" height="138.7" fill="#f9f7f3"/>
+<line x1="80.0" y1="396.9" x2="80.0" y2="535.6" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="145.2" y1="396.9" x2="145.2" y2="535.6" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="210.5" y1="396.9" x2="210.5" y2="535.6" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="275.7" y1="396.9" x2="275.7" y2="535.6" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="340.9" y1="396.9" x2="340.9" y2="535.6" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="406.2" y1="396.9" x2="406.2" y2="535.6" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="471.4" y1="396.9" x2="471.4" y2="535.6" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="536.6" y1="396.9" x2="536.6" y2="535.6" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="601.8" y1="396.9" x2="601.8" y2="535.6" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="667.1" y1="396.9" x2="667.1" y2="535.6" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="732.3" y1="396.9" x2="732.3" y2="535.6" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="797.5" y1="396.9" x2="797.5" y2="535.6" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="862.8" y1="396.9" x2="862.8" y2="535.6" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="80.0" y1="443.2" x2="928.0" y2="443.2" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<line x1="80.0" y1="489.4" x2="928.0" y2="489.4" stroke="#000" stroke-width="1.00" stroke-opacity="0.080" stroke-linecap="butt"/>
+<rect x="70.4" y="535.6" width="867.2" height="32.0" fill="#E9E5DE"/>
+<rect x="70.4" y="567.6" width="867.2" height="6.4" fill="#000" fill-opacity="0.180"/>
+<rect x="80.0" y="574.0" width="848.0" height="172.9" fill="#2F3A42"/>
+<rect x="93.6" y="586.9" width="142.5" height="138.3" fill="#3b464d"/>
+<rect x="130.9" y="603.9" width="67.8" height="10.7" fill="#C9A227" fill-opacity="0.900" rx="2.0"/>
+<rect x="263.2" y="586.9" width="142.5" height="138.3" fill="#3b464d"/>
+<rect x="300.5" y="603.9" width="67.8" height="10.7" fill="#C9A227" fill-opacity="0.900" rx="2.0"/>
+<rect x="432.8" y="586.9" width="142.5" height="138.3" fill="#3b464d"/>
+<rect x="470.1" y="603.9" width="67.8" height="10.7" fill="#C9A227" fill-opacity="0.900" rx="2.0"/>
+<rect x="602.4" y="586.9" width="142.5" height="138.3" fill="#3b464d"/>
+<rect x="639.7" y="603.9" width="67.8" height="10.7" fill="#C9A227" fill-opacity="0.900" rx="2.0"/>
+<rect x="772.0" y="586.9" width="142.5" height="138.3" fill="#3b464d"/>
+<rect x="809.3" y="603.9" width="67.8" height="10.7" fill="#C9A227" fill-opacity="0.900" rx="2.0"/>
+<rect x="80.0" y="723.4" width="848.0" height="23.5" fill="#000" fill-opacity="0.280"/>
+<rect x="605.8" y="539.9" width="203.5" height="23.5" fill="#a8a5a0" rx="3.0"/>
+<rect x="1038.4" y="191.2" width="387.2" height="311.1" fill="#FFFFFF" fill-opacity="0.950" rx="2.0"/>
+<rect x="1056.0" y="202.7" width="352.0" height="288.1" fill="#FFF3DF" fill-opacity="0.920"/>
+<rect x="1056.0" y="202.7" width="352.0" height="144.0" fill="#FFFFFF" fill-opacity="0.180"/>
+<line x1="1232.0" y1="202.7" x2="1232.0" y2="490.8" stroke="#FFFFFF" stroke-width="17.60" stroke-opacity="0.900" stroke-linecap="butt"/>
+<line x1="1056.0" y1="346.8" x2="1408.0" y2="346.8" stroke="#FFFFFF" stroke-width="12.96" stroke-opacity="0.900" stroke-linecap="butt"/>
+<rect x="387.8" y="804.5" width="760.3" height="32.0" fill="#E9E5DE"/>
+<rect x="387.8" y="836.5" width="760.3" height="6.4" fill="#000" fill-opacity="0.200"/>
+<rect x="416.0" y="842.9" width="704.0" height="197.4" fill="#2F3A42"/>
+<rect x="416.0" y="842.9" width="704.0" height="197.4" fill="#000" fill-opacity="0.080"/>
+<rect x="528.6" y="884.5" width="84.5" height="8.5" fill="#C9A227" fill-opacity="0.850" rx="2.0"/>
+<rect x="725.8" y="884.5" width="84.5" height="8.5" fill="#C9A227" fill-opacity="0.850" rx="2.0"/>
+<rect x="922.9" y="884.5" width="84.5" height="8.5" fill="#C9A227" fill-opacity="0.850" rx="2.0"/>
+<rect x="416.0" y="1033.9" width="704.0" height="12.8" fill="#000" fill-opacity="0.300"/>
+<line x1="627.2" y1="64.0" x2="627.2" y2="304.1" stroke="#3A3027" stroke-width="2.20" stroke-opacity="0.550" stroke-linecap="butt"/>
+<polygon points="588.8,352.1 665.6,352.1 643.2,304.1 611.2,304.1" fill="#E2743B"/>
+<ellipse cx="627.2" cy="354.2" rx="38.4" ry="9.6" fill="#FFF3DF"/>
+<ellipse cx="627.2" cy="384.1" rx="80.0" ry="32.0" fill="#FFF3DF" fill-opacity="0.18"/>
+<line x1="908.8" y1="64.0" x2="908.8" y2="304.1" stroke="#3A3027" stroke-width="2.20" stroke-opacity="0.550" stroke-linecap="butt"/>
+<polygon points="870.4,352.1 947.2,352.1 924.8,304.1 892.8,304.1" fill="#E2743B"/>
+<ellipse cx="908.8" cy="354.2" rx="38.4" ry="9.6" fill="#FFF3DF"/>
+<ellipse cx="908.8" cy="384.1" rx="80.0" ry="32.0" fill="#FFF3DF" fill-opacity="0.18"/>
+<line x1="0.0" y1="782.5" x2="1600.0" y2="782.5" stroke="#000" stroke-width="1.20" stroke-opacity="0.090" stroke-linecap="butt"/>
+<line x1="0.0" y1="818.0" x2="1600.0" y2="818.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.090" stroke-linecap="butt"/>
+<line x1="0.0" y1="853.6" x2="1600.0" y2="853.6" stroke="#000" stroke-width="1.20" stroke-opacity="0.090" stroke-linecap="butt"/>
+<line x1="0.0" y1="889.2" x2="1600.0" y2="889.2" stroke="#000" stroke-width="1.20" stroke-opacity="0.090" stroke-linecap="butt"/>
+<line x1="0.0" y1="924.7" x2="1600.0" y2="924.7" stroke="#000" stroke-width="1.20" stroke-opacity="0.090" stroke-linecap="butt"/>
+<line x1="0.0" y1="960.3" x2="1600.0" y2="960.3" stroke="#000" stroke-width="1.20" stroke-opacity="0.090" stroke-linecap="butt"/>
+<line x1="0.0" y1="995.9" x2="1600.0" y2="995.9" stroke="#000" stroke-width="1.20" stroke-opacity="0.090" stroke-linecap="butt"/>
+<line x1="0.0" y1="1031.4" x2="1600.0" y2="1031.4" stroke="#000" stroke-width="1.20" stroke-opacity="0.090" stroke-linecap="butt"/>
+<line x1="0.0" y1="1067.0" x2="1600.0" y2="1067.0" stroke="#000" stroke-width="1.20" stroke-opacity="0.090" stroke-linecap="butt"/>
+<text x="1581" y="1048" text-anchor="end" font-family="Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="1.7" fill="#FFFFFF" fill-opacity="0.34">PLACEHOLDER</text>
+  <rect width="1600" height="1067" filter="url(#grk8366)" opacity="0.5" style="mix-blend-mode:overlay"/>
+  <rect width="1600" height="1067" fill="url(#vgk8366)"/>
 </svg>

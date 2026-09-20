@@ -1,43 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1100" width="2400" height="1100"
-     role="img" aria-label="Services Header — placeholder image">
+     role="img" aria-label="Crew on site — illustrated placeholder">
   <defs>
-    <linearGradient id="wall-head-services" x1="0" y1="0" x2="0.3" y2="1">
-      <stop offset="0" stop-color="#8A97A5"/><stop offset="1" stop-color="#5A6470"/>
-    </linearGradient>
-    <linearGradient id="floor-head-services" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#46505B" stop-opacity="0.92"/>
-      <stop offset="1" stop-color="#46505B"/>
-    </linearGradient>
-    <linearGradient id="pane-head-services" x1="0" y1="0" x2="0.4" y2="1">
-      <stop offset="0" stop-color="#FFD9A8" stop-opacity="0.85"/>
-      <stop offset="1" stop-color="#FFD9A8" stop-opacity="0.12"/>
-    </linearGradient>
-    <linearGradient id="shaft-head-services" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFD9A8" stop-opacity="0.34"/>
-      <stop offset="1" stop-color="#FFD9A8" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="lamp-head-services" cx="0.501" cy="0.337" r="0.62">
-      <stop offset="0" stop-color="#E8A263" stop-opacity="0.30"/>
-      <stop offset="1" stop-color="#E8A263" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="vig-head-services" cx="0.5" cy="0.48" r="0.78">
-      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+<linearGradient id="wallj3484" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DCD5C8" stop-opacity="1"/><stop offset="1" stop-color="#B8B0A2" stop-opacity="1"/></linearGradient>
+<filter id="grj3484" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer>
+    </filter>
+<radialGradient id="vgj3484" cx="0.5" cy="0.48" r="0.76">
+      <stop offset="0.42" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.42"/>
     </radialGradient>
   </defs>
-
-  <rect width="2400" height="1100" fill="url(#wall-head-services)"/>
-  <rect x="671" y="377" width="409" height="238" rx="4" fill="url(#pane-head-services)" fill-opacity="0.33"/><rect x="671" y="377" width="409" height="238" rx="4" fill="none" stroke="#FFD9A8" stroke-opacity="0.18" stroke-width="2.0"/><rect x="1429" y="203" width="323" height="378" rx="4" fill="url(#pane-head-services)" fill-opacity="0.18"/><rect x="1429" y="203" width="323" height="378" rx="4" fill="none" stroke="#FFD9A8" stroke-opacity="0.10" stroke-width="2.0"/>
-  <rect y="674" width="2400" height="426" fill="url(#floor-head-services)"/>
-  <rect y="674" width="2400" height="2.0" fill="#FFD9A8" fill-opacity="0.18"/>
-  <path d="M1009 674 L1441 674 L2017 1100 L481 1100 Z" fill="url(#shaft-head-services)" fill-opacity="0.5"/>
-  <rect width="2400" height="1100" fill="url(#lamp-head-services)"/>
-  <rect width="2400" height="1100" fill="url(#vig-head-services)"/>
-  <text x="1200" y="550" text-anchor="middle"
-        font-family="Inter, Helvetica, Arial, sans-serif" font-size="42"
-        font-weight="650" fill="#FFFFFF" fill-opacity="0.90">Services Header</text>
-  <text x="1200" y="601" text-anchor="middle"
-        font-family="Inter, Helvetica, Arial, sans-serif" font-size="24"
-        font-weight="500" letter-spacing="2.4"
-        fill="#FFFFFF" fill-opacity="0.40">REPLACE WITH PHOTO</text>
+<rect x="0.0" y="0.0" width="2400.0" height="880.0" fill="url(#wallj3484)"/>
+<rect x="0.0" y="880.0" width="2400.0" height="220.0" fill="#9A8F7C"/>
+<rect x="0.0" y="110.0" width="48.0" height="770.0" fill="#C9AE82" fill-opacity="0.900"/>
+<rect x="266.7" y="110.0" width="48.0" height="770.0" fill="#C9AE82" fill-opacity="0.900"/>
+<rect x="533.3" y="110.0" width="48.0" height="770.0" fill="#C9AE82" fill-opacity="0.900"/>
+<rect x="800.0" y="110.0" width="48.0" height="770.0" fill="#C9AE82" fill-opacity="0.900"/>
+<rect x="1066.7" y="110.0" width="48.0" height="770.0" fill="#C9AE82" fill-opacity="0.900"/>
+<rect x="1333.3" y="110.0" width="48.0" height="770.0" fill="#C9AE82" fill-opacity="0.900"/>
+<rect x="1600.0" y="110.0" width="48.0" height="770.0" fill="#C9AE82" fill-opacity="0.900"/>
+<rect x="1866.7" y="110.0" width="48.0" height="770.0" fill="#C9AE82" fill-opacity="0.900"/>
+<rect x="2133.3" y="110.0" width="48.0" height="770.0" fill="#C9AE82" fill-opacity="0.900"/>
+<rect x="0.0" y="110.0" width="2400.0" height="24.2" fill="#C9AE82"/>
+<rect x="0.0" y="858.0" width="2400.0" height="24.2" fill="#C9AE82"/>
+<polygon points="1320.0,0.0 2208.0,0.0 1776.0,880.0 960.0,880.0" fill="#FFFFFF" fill-opacity="0.100"/>
+<line x1="384.0" y1="154.0" x2="312.0" y2="880.0" stroke="#C0C3C6" stroke-width="5.00" stroke-opacity="0.900" stroke-linecap="butt"/>
+<line x1="552.0" y1="154.0" x2="480.0" y2="880.0" stroke="#C0C3C6" stroke-width="5.00" stroke-opacity="0.900" stroke-linecap="butt"/>
+<line x1="384.0" y1="198.0" x2="552.0" y2="198.0" stroke="#C0C3C6" stroke-width="4.00" stroke-opacity="0.900" stroke-linecap="butt"/>
+<line x1="372.0" y1="308.0" x2="540.0" y2="308.0" stroke="#C0C3C6" stroke-width="4.00" stroke-opacity="0.900" stroke-linecap="butt"/>
+<line x1="360.0" y1="418.0" x2="528.0" y2="418.0" stroke="#C0C3C6" stroke-width="4.00" stroke-opacity="0.900" stroke-linecap="butt"/>
+<line x1="348.0" y1="528.0" x2="516.0" y2="528.0" stroke="#C0C3C6" stroke-width="4.00" stroke-opacity="0.900" stroke-linecap="butt"/>
+<line x1="336.0" y1="638.0" x2="504.0" y2="638.0" stroke="#C0C3C6" stroke-width="4.00" stroke-opacity="0.900" stroke-linecap="butt"/>
+<line x1="324.0" y1="748.0" x2="492.0" y2="748.0" stroke="#C0C3C6" stroke-width="4.00" stroke-opacity="0.900" stroke-linecap="butt"/>
+<line x1="1440.0" y1="880.0" x2="1344.0" y2="1078.0" stroke="#8A6A45" stroke-width="6.00" stroke-opacity="0.950" stroke-linecap="butt"/>
+<line x1="1680.0" y1="880.0" x2="1776.0" y2="1078.0" stroke="#8A6A45" stroke-width="6.00" stroke-opacity="0.950" stroke-linecap="butt"/>
+<rect x="1200.0" y="858.0" width="768.0" height="27.5" fill="#C9AE82"/>
+<rect x="1920.0" y="770.0" width="240.0" height="110.0" fill="#E2743B" fill-opacity="0.900"/>
+<rect x="0.0" y="880.0" width="2400.0" height="220.0" fill="#000" fill-opacity="0.060"/>
+<text x="2380" y="1080" text-anchor="end" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="600" letter-spacing="1.7" fill="#FFFFFF" fill-opacity="0.34">PLACEHOLDER</text>
+  <rect width="2400" height="1100" filter="url(#grj3484)" opacity="0.5" style="mix-blend-mode:overlay"/>
+  <rect width="2400" height="1100" fill="url(#vgj3484)"/>
 </svg>
