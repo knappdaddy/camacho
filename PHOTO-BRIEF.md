@@ -3,6 +3,39 @@
 Everything on the site is currently a drawn illustration. This is the list of
 what to replace, and a prompt for each if you're generating images.
 
+## Option A — pull from Unsplash (fastest)
+
+Free for commercial use, no attribution required by the licence (the script
+credits photographers anyway, as the API Guidelines require).
+
+**This must run on your own machine** — the Claude Code sandbox's egress policy
+denies unsplash.com with a 403, so it cannot be done from a session.
+
+```bash
+export UNSPLASH_ACCESS_KEY=...            # free at https://unsplash.com/developers
+python3 tools/fetch-unsplash.py --candidates 3
+# review incoming/_candidates/, copy the keepers into incoming/ as <slot>.jpg
+python3 tools/import-photos.py --apply
+git add -A && git commit -m "Real photography" && git push
+```
+
+**Stock cannot do the before/after pairs.** There is no way to get two stock
+photos of the *same room* in two conditions, and a mismatched pair makes the
+wipe slider look broken — which is the one thing on this site worth protecting.
+So `fetch-unsplash.py` skips the sixteen pair slots by default. Use it for the
+twenty background and tile slots, and get the pairs from his actual jobs or from
+AI editing (generate the after, then edit *that image* into the before).
+
+`--include-pairs` will fetch unmatched stand-ins anyway if you want to see
+something there in the meantime.
+
+Mold, water damage and lead paint are thin on Unsplash — expect to pick those by
+hand or leave them illustrated.
+
+---
+
+## Option B — generate them
+
 **How to use it:** produce the images, name each file after its slot, drop them
 in `incoming/`, then run:
 
@@ -43,6 +76,7 @@ Prepend this to every prompt so the set looks like one photographer shot it:
 ---
 
 ## The shot list
+
 
 ### Before/after pairs — 3:2, 1600×1067 or larger
 
