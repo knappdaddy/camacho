@@ -60,6 +60,11 @@ SLOTS = {
     "about-jobsite":    ("carpenter working tools construction", "portrait", 1200),
     "og-image":         ("renovated kitchen interior", "landscape", 1200),
 
+    # The featured comparison directly under the hero. Kept as a living room so
+    # it doesn't repeat the kitchen in the hero and the first gallery project.
+    "hero-before":      ("dated old living room interior", "landscape", 1600),
+    "hero-after":       ("modern renovated living room interior", "landscape", 1600),
+
     "tile-renovations": ("renovated kitchen interior cabinets", "portrait", 1200),
     "tile-water":       ("water damage ceiling leak stain", "portrait", 1200),
     "tile-remediation": ("mold damp wall damage", "portrait", 1200),

@@ -81,6 +81,38 @@ jobs:
           python3 tools/import-photos.py --apply
           python3 tools/stamp-build.py
 
+      - name: Compress
+        if: ${{ inputs.mode == 'apply' }}
+        run: |
+          IM="$(command -v magick || command -v convert || true)"
+          if [ -z "$IM" ]; then
+            sudo apt-get update -qq && sudo apt-get install -y -qq imagemagick
+            IM="$(command -v convert)"
+          fi
+          echo "Using $IM"
+          shrink() {
+            width="$1"; shift
+            for f in "$@"; do
+              [ -e "$f" ] || continue
+              before=$(stat -c%s "$f")
+              "$IM" "$f" -auto-orient -strip -resize "${width}x>" \
+                    -interlace Plane -sampling-factor 4:2:0 -quality 72 "$f"
+              after=$(stat -c%s "$f")
+              printf '  %-34s %5d KB -> %4d KB\n' "$(basename "$f")" $((before/1024)) $((after/1024))
+            done
+          }
+          # Widths chosen from how large each one actually renders, doubled for
+          # high-density screens. Tiles show at ~310 CSS px, so 900 is ample.
+          shrink 900  assets/img/site/tile-*.jpg
+          shrink 1000 assets/img/site/about-jobsite.jpg
+          shrink 1400 assets/img/projects/*.jpg assets/img/site/hero-before.jpg assets/img/site/hero-after.jpg
+          shrink 1200 assets/img/site/og-image.jpg
+          shrink 2000 assets/img/site/hero-bg.jpg assets/img/site/cta-bg.jpg \
+                      assets/img/site/band-*.jpg assets/img/site/head-*.jpg \
+                      assets/img/site/about-wide.jpg
+          echo ""
+          echo "Total image weight now: $(du -sh assets/img | cut -f1)"
+
       - name: Commit and deploy
         if: ${{ inputs.mode == 'apply' }}
         run: |
