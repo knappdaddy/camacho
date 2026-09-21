@@ -915,8 +915,24 @@ li { margin-bottom: 0.4em; }
   .split__body { padding-inline: clamp(2.5rem, 5vw, 4.5rem); }}
 
 /* Featured comparison that lifts off the hero ------------------------------ */
-.showcase { position: relative; z-index: 5; }
-@media (min-width: 980px) { .showcase { margin-top: -5.5rem; }}
+/* The featured comparison sits in its own module rather than overlapping the
+   hero. The overlap read as elegant on a wide screen but on a phone the card
+   simply collided with the section above it, and it left the comparison with
+   no heading to explain what it was. */
+.showcase {
+  position: relative; z-index: 5;
+  background: var(--paper);
+  padding-block: clamp(2.75rem, 6vw, 4.5rem) 0;
+}
+.showcase__head {
+  max-width: 44rem;
+  margin-bottom: clamp(1.25rem, 3vw, 1.75rem);
+}
+.showcase__head h2 {
+  font-size: clamp(1.5rem, 3.2vw, 2.125rem);
+  margin-bottom: 0.5rem;
+}
+.showcase__head > p { color: var(--text-muted); margin: 0; }
 .showcase .compare { box-shadow: 0 24px 70px -28px rgba(0, 0, 0, 0.75); }
 .showcase .compare, .showcase .compare .compare__pane { aspect-ratio: 16 / 9; }
 @media (max-width: 700px) {
