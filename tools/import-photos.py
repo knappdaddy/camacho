@@ -11,6 +11,7 @@ are listed in PHOTO-BRIEF.md and printed by this script with --list. Then:
 Any of .jpg / .jpeg / .png / .webp works. Anything you don't supply keeps its
 illustrated placeholder, so you can bring photos in a few at a time.
 """
+import re
 import shutil
 import sys
 import pathlib
@@ -110,9 +111,11 @@ def main():
         old_ref = f"assets/img/{dest}.svg"
         new_ref = f"assets/img/{dest}{src.suffix}"
         if old_ref != new_ref:
+            # References may carry a ?v=... cache-busting query (see
+            # tools/stamp-build.py), so match the path and keep whatever follows.
+            pattern = re.compile(re.escape(old_ref) + r'(\?v=[^"]*)?')
             for f in html:
-                if old_ref in texts[f]:
-                    texts[f] = texts[f].replace(old_ref, new_ref)
+                texts[f] = pattern.sub(new_ref, texts[f])
             stale = ROOT / "assets" / "img" / (dest + ".svg")
             stale.unlink(missing_ok=True)
         changed += 1
