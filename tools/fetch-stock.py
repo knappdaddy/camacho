@@ -94,8 +94,11 @@ PAIR_SLOTS = {
 }
 
 
+UA = "american-restoration-tech-site/1.0 (+https://github.com/knappdaddy/camacho)"
+
+
 def get_json(url, headers):
-    req = urllib.request.Request(url, headers=headers)
+    req = urllib.request.Request(url, headers={**headers, "User-Agent": UA})
     with urllib.request.urlopen(req, timeout=30) as r:
         return json.load(r)
 
@@ -104,7 +107,7 @@ class Pexels:
     tag, env = "px", "PEXELS_API_KEY"
 
     def __init__(self, key):
-        self.h = {"Authorization": key}
+        self.h = {"Authorization": key.strip()}
 
     def search(self, query, orientation, n):
         url = "https://api.pexels.com/v1/search?" + urllib.parse.urlencode(
@@ -125,8 +128,8 @@ class Unsplash:
     tag, env = "us", "UNSPLASH_ACCESS_KEY"
 
     def __init__(self, key):
-        self.key = key
-        self.h = {"Authorization": f"Client-ID {key}", "Accept-Version": "v1"}
+        self.key = key.strip()
+        self.h = {"Authorization": f"Client-ID {self.key}", "Accept-Version": "v1"}
 
     def search(self, query, orientation, n):
         url = "https://api.unsplash.com/search/photos?" + urllib.parse.urlencode(
@@ -159,9 +162,34 @@ def download(hit, dest, width):
     url = src + ("&" if "?" in src else "?") + urllib.parse.urlencode(
         {"w": width, "q": "80", "fm": "jpg", "fit": "max"})
     dest.parent.mkdir(parents=True, exist_ok=True)
-    req = urllib.request.Request(url, headers=hit["headers"] or {})
+    req = urllib.request.Request(url, headers={**(hit["headers"] or {}), "User-Agent": UA})
     with urllib.request.urlopen(req, timeout=90) as r, open(dest, "wb") as f:
         f.write(r.read())
+
+
+def http_detail(e):
+    """Whatever the server said about the refusal, trimmed to one line."""
+    try:
+        body = e.read().decode("utf-8", "replace").strip().replace("\n", " ")
+    except Exception:
+        body = ""
+    hint = {
+        401: "key rejected",
+        403: "key rejected or not authorised — check the secret is the exact API key",
+        429: "rate limited — wait, or use a single --source",
+    }.get(e.code, "")
+    return f"({hint}) {body[:160]}".strip()
+
+
+def preflight(prov):
+    """One cheap call, so a bad key fails in two seconds instead of 36 slots."""
+    try:
+        prov.search("house", "landscape", 1)
+        return True, ""
+    except urllib.error.HTTPError as e:
+        return False, f"HTTP {e.code} {http_detail(e)}"
+    except Exception as e:
+        return False, str(e)
 
 
 def main():
@@ -191,6 +219,18 @@ def main():
                  "  Unsplash (free, 50/hr):  https://unsplash.com/developers\n"
                  "Export PEXELS_API_KEY and/or UNSPLASH_ACCESS_KEY, then re-run.")
 
+    live = []
+    for prov in providers:
+        ok, why = preflight(prov)
+        if ok:
+            live.append(prov)
+        else:
+            print(f"error: {type(prov).__name__} rejected the request — {why}")
+    if not live:
+        sys.exit("\nNo usable API key. For Pexels, the secret must be the raw key from\n"
+                 "https://www.pexels.com/api/ — no quotes, no 'Bearer ', no trailing spaces.")
+    providers = live
+
     wanted = dict(SLOTS)
     if not args.skip_pairs:
         for slug, (qb, qa) in PAIR_SLOTS.items():
@@ -210,8 +250,7 @@ def main():
             try:
                 hits = prov.search(query, orientation, args.candidates)
             except urllib.error.HTTPError as e:
-                failures.append((slot, prov.tag, f"HTTP {e.code}"
-                                 + (" — rate limit, try --source pexels" if e.code == 429 else "")))
+                failures.append((slot, prov.tag, f"HTTP {e.code} {http_detail(e)}"))
                 continue
             except Exception as e:
                 failures.append((slot, prov.tag, str(e)))
@@ -259,6 +298,9 @@ def main():
             print(f"  {slot} ({tag}): {why}")
         print("\nMold, water damage and lead paint are thin on both libraries —")
         print("expect to hand-pick those, or leave them illustrated.")
+
+    if got == 0:
+        sys.exit("\nNothing was downloaded — failing so this does not look like a success.")
 
 
 if __name__ == "__main__":
