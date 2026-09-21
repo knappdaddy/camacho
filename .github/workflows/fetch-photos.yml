@@ -1,0 +1,112 @@
+name: Fetch photos
+
+# Runs the stock-photo fetch on GitHub's servers, which have normal internet
+# access. Nothing needs installing locally.
+#
+# One-time setup:
+#   1. Get a free API key at https://www.pexels.com/api/
+#   2. Repo Settings -> Secrets and variables -> Actions -> New repository secret
+#      Name: PEXELS_API_KEY     Value: your key
+#      (optional second: UNSPLASH_ACCESS_KEY)
+#
+# Then: Actions tab -> "Fetch photos" -> Run workflow.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "review = download options to look at · apply = put photos on the site"
+        type: choice
+        default: review
+        options: [review, apply]
+      source:
+        description: "Which library to search"
+        type: choice
+        default: both
+        options: [both, pexels, unsplash]
+      slots:
+        description: "Optional: only these slots, comma separated (blank = all)"
+        type: string
+        default: ""
+      include_pairs:
+        description: "Include the before/after slots"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check a key is configured
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+        run: |
+          if [ -z "$PEXELS_API_KEY" ] && [ -z "$UNSPLASH_ACCESS_KEY" ]; then
+            echo "::error::No API key. Add PEXELS_API_KEY under Settings > Secrets and variables > Actions. Free key: https://www.pexels.com/api/"
+            exit 1
+          fi
+
+      - name: Fetch
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+        run: |
+          ARGS="--source ${{ inputs.source }}"
+          ARGS="$ARGS --candidates 3"
+          if [ "${{ inputs.mode }}" = "apply" ]; then ARGS="$ARGS --pick"; fi
+          if [ "${{ inputs.include_pairs }}" != "true" ]; then ARGS="$ARGS --skip-pairs"; fi
+          if [ -n "${{ inputs.slots }}" ]; then ARGS="$ARGS --only ${{ inputs.slots }}"; fi
+          echo "Running: python3 tools/fetch-stock.py $ARGS"
+          python3 tools/fetch-stock.py $ARGS
+
+      - name: Upload for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: photo-candidates
+          path: |
+            incoming/**/*.jpg
+            incoming/CREDITS.md
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Put them on the site
+        if: ${{ inputs.mode == 'apply' }}
+        run: |
+          python3 tools/import-photos.py --apply
+          python3 tools/stamp-build.py
+
+      - name: Commit and deploy
+        if: ${{ inputs.mode == 'apply' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "Import stock photography" \
+                       -m "Fetched by the Fetch photos workflow (source: ${{ inputs.source }}). Photographer credits are in incoming/CREDITS.md."
+            git push
+            echo "Pushed. Pages will redeploy in about 30 seconds."
+          fi
+
+      - name: Summary
+        run: |
+          {
+            echo "### Fetch photos — ${{ inputs.mode }}"
+            echo ""
+            if [ "${{ inputs.mode }}" = "apply" ]; then
+              echo "Photos are on the site. Give Pages ~30s, then hard-refresh:"
+            else
+              echo "Nothing was changed on the site. Download the **photo-candidates**"
+              echo "artifact below to look through the options."
+            fi
+            echo ""
+            echo "https://knappdaddy.github.io/camacho/"
+          } >> "$GITHUB_STEP_SUMMARY"

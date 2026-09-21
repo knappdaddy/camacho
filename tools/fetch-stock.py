@@ -2,23 +2,31 @@
 """
 Fills incoming/ with photographs from Pexels and/or Unsplash.
 
-This cannot run inside the Claude Code sandbox — its egress policy denies both
-(403 on the proxy CONNECT). Run it on your own machine, then commit the result.
+Easiest way to run it: don't. Use the "Fetch photos" workflow in the repo's
+Actions tab, which runs this on GitHub's servers and needs nothing installed.
+See PHOTO-BRIEF.md.
+
+To run it yourself instead — note it cannot run inside the Claude Code sandbox,
+whose egress policy denies both APIs (403 on the proxy CONNECT):
 
     export PEXELS_API_KEY=...             # free: https://www.pexels.com/api/
     export UNSPLASH_ACCESS_KEY=...        # free: https://unsplash.com/developers
-    python3 tools/fetch-stock.py
-    # review incoming/_candidates/, copy keepers into incoming/ as <slot>.jpg
+    python3 tools/fetch-stock.py --pick
     python3 tools/import-photos.py --apply
 
 Either key alone is enough; whichever are set get queried. Standard library
 only — no pip install.
 
-Which source is better here is an open question, which is why it queries both
-and lets you choose. Pexels tends to carry more practical, workmanlike imagery
-(job sites, damage, crews) and allows 200 requests/hour; Unsplash is stronger on
-polished interiors but a demo key is capped at 50/hour, which 36 slots will
-exceed. Filenames are suffixed -px / -us so you can see which came from where.
+Every hit is saved to incoming/_candidates/ so you can compare; --pick also
+promotes the first hit per slot to incoming/<slot>.jpg, which is what
+import-photos.py reads. To choose differently, overwrite that file with any
+candidate and re-import.
+
+Which source is better here is an open question, which is why it queries both.
+Pexels tends to carry more practical, workmanlike imagery (job sites, damage,
+crews) and allows 200 requests/hour; Unsplash is stronger on polished interiors
+but a demo key is capped at 50/hour, which 36 slots will exceed. Filenames are
+suffixed -px / -us so you can see which came from where.
 
 Licensing: both licences permit commercial use without attribution. Crediting
 the photographer is required by the Unsplash API Guidelines and good practice
@@ -28,6 +36,7 @@ import argparse
 import json
 import os
 import pathlib
+import shutil
 import sys
 import time
 import urllib.error
@@ -160,6 +169,9 @@ def main():
     ap.add_argument("--source", choices=["pexels", "unsplash", "both"], default="both")
     ap.add_argument("--candidates", type=int, default=3,
                     help="options to save per slot per source (default 3)")
+    ap.add_argument("--pick", action="store_true",
+                    help="also copy the first hit per slot to incoming/<slot>.jpg, "
+                         "ready for import-photos.py (candidates are still saved)")
     ap.add_argument("--skip-pairs", action="store_true",
                     help="leave the before/after slots illustrated")
     ap.add_argument("--only", help="comma-separated slot names")
@@ -191,6 +203,7 @@ def main():
     outdir = INBOX / "_candidates"
     outdir.mkdir(parents=True, exist_ok=True)
     credits, failures, got = [], [], 0
+    picked = set()
 
     for slot, (query, orientation, width) in wanted.items():
         for prov in providers:
@@ -210,6 +223,9 @@ def main():
                 name = f"{slot}-{prov.tag}{i}.jpg"
                 try:
                     download(hit, outdir / name, width)
+                    if args.pick and slot not in picked:
+                        shutil.copy2(outdir / name, INBOX / f"{slot}.jpg")
+                        picked.add(slot)
                     if hit["after"] and hasattr(prov, "ping"):
                         prov.ping(hit["after"])
                     credits.append(f"- `{name}` — {hit['credit']}")
@@ -227,7 +243,11 @@ def main():
         + "\n".join(credits) + "\n")
 
     print(f"\n{got} image(s) in incoming/_candidates/")
-    print("Copy the ones you want into incoming/ named <slot>.jpg, then:")
+    if picked:
+        print(f"{len(picked)} promoted to incoming/ as <slot>.jpg — ready to import.")
+        print("Swap in a different candidate any time by overwriting that file.")
+    else:
+        print("Copy the ones you want into incoming/ named <slot>.jpg, then:")
     print("  python3 tools/import-photos.py --apply")
     if not args.skip_pairs:
         print("\nFor the before/after pairs, choose the two whose framing is closest —")

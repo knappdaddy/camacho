@@ -3,41 +3,62 @@
 Everything on the site is currently a drawn illustration. This is the list of
 what to replace, and a prompt for each if you're generating images.
 
-## Option A — pull from stock (fastest)
+## Option A — pull from stock (no install, runs on GitHub)
 
-Pexels and Unsplash are both free for commercial use with no attribution
-required. `tools/fetch-stock.py` queries both and saves several candidates per
-slot so you can pick.
+### One-time setup, about two minutes
 
-**It must run on your own machine** — the Claude Code sandbox denies both hosts
-(403 on the proxy CONNECT), so this cannot be done from a session.
+1. Get a free API key at **https://www.pexels.com/api/** — sign in, then
+   "Your API Key". Copy it.
+2. In this repo go to **Settings → Secrets and variables → Actions →
+   New repository secret**.
+3. Name it `PEXELS_API_KEY`, paste the key, save.
+
+(Optionally add `UNSPLASH_ACCESS_KEY` too, from
+https://unsplash.com/developers — then both libraries get searched.)
+
+### Each time you want photos
+
+1. **Actions** tab → **Fetch photos** (left sidebar) → **Run workflow**.
+2. Choose a mode:
+   - **review** — downloads three options per slot and changes nothing. The run
+     page gets a `photo-candidates` zip you can download and look through.
+   - **apply** — picks the best match per slot, puts it on the site, commits and
+     pushes. Pages redeploys in ~30 seconds.
+3. Wait for the green tick (a minute or two), then hard-refresh
+   https://knappdaddy.github.io/camacho/
+
+Nothing to install, no terminal. Run it as often as you like — re-running
+**apply** replaces the photos with a fresh set.
+
+**Changing individual photos.** Download the `photo-candidates` zip from any
+run. Each file is named `<slot>-px2.jpg` (px = Pexels, us = Unsplash). Rename
+the one you want to just `<slot>.jpg`, drop it in `incoming/`, commit, and run
+`python3 tools/import-photos.py --apply` — or ask me and I'll wire it in.
+
+The `slots` input limits a run to named slots, e.g. `tile-decks,hero-bg`, which
+is handy for redoing one bad image without touching the rest.
+
+### If you'd rather run it locally
 
 ```bash
-export PEXELS_API_KEY=...                 # free, 200/hr: https://www.pexels.com/api/
-export UNSPLASH_ACCESS_KEY=...            # free, 50/hr:  https://unsplash.com/developers
-python3 tools/fetch-stock.py
-# review incoming/_candidates/ — filenames are suffixed -px / -us by source
-# copy the keepers into incoming/ as <slot>.jpg
+export PEXELS_API_KEY=...
+python3 tools/fetch-stock.py --pick
 python3 tools/import-photos.py --apply
 git add -A && git commit -m "Real photography" && git push
 ```
 
-Either key alone works. Pexels is the better bet for this subject matter —
-more practical, workmanlike imagery, and a rate limit that 36 slots won't blow
-through. Unsplash is stronger on polished interiors. Hence: query both, choose.
+### What to expect
 
-**About the before/after pairs.** Stock can't give you the same room in two
-conditions, so these are approximations — a dated kitchen next to a different
-modern kitchen. The queries are phrased in parallel on each side to pull similar
-framing, but they won't line up the way a real pair does. When choosing
-candidates, pick the two whose distance and angle are closest to each other;
-that matters more than either photo being the nicest on its own.
+**The before/after pairs will be approximate.** Stock can't give you the same
+room in two conditions, so a dated kitchen sits opposite a different modern
+kitchen. The queries are phrased in parallel on each side to pull similar
+framing, but they won't line up the way a real pair does. `include_pairs: false`
+leaves those sixteen slots illustrated if you'd rather.
 
-`--skip-pairs` leaves those sixteen slots illustrated if you'd rather.
-
-Mold, water damage and lead paint are thin on both libraries. Expect to
-hand-pick those, or keep the illustrations — the drawn versions of those three
-are arguably better than what stock returns.
+**Mold, water damage and lead paint are thin on both libraries.** Expect poor
+matches there — the drawn illustrations of those three are arguably better than
+anything stock returns. Consider running with `include_pairs: false` and using
+the `slots` input to fetch only the slots that stock handles well.
 
 ---
 

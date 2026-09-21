@@ -59,6 +59,12 @@ pattern to copy is `services.html`.
 
 ## Replacing the placeholder photos
 
+> **Quickest path:** the **Actions** tab → **Fetch photos** → **Run workflow**.
+> It pulls stock photography, puts it on the site and redeploys, with nothing to
+> install. Needs a free `PEXELS_API_KEY` repository secret first — full
+> instructions in [PHOTO-BRIEF.md](PHOTO-BRIEF.md).
+
+
 **This is the main thing to do.** The site is built photography-first: the hero,
 the service tiles, the section bands and the page headers are all photographs.
 
