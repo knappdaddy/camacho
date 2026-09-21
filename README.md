@@ -106,7 +106,7 @@ That's it. The markup for a comparison is only four lines:
     <img data-compare-before src="assets/img/projects/cedar-deck-before.jpg" alt="Before: the failing original deck">
     <img data-compare-after  src="assets/img/projects/cedar-deck-after.jpg"  alt="After: the finished cedar deck">
   </div>
-  <div class="compare-bar"><figcaption>Arlington, VA</figcaption></div>
+  <div class="compare-bar"><figcaption>Westfield, NJ</figcaption></div>
 </figure>
 ```
 
@@ -179,7 +179,7 @@ Everything below is placeholder. Use find-and-replace across all `.html` files:
 | `+15550142300` | the real phone number (dialling format, no spaces) |
 | `hello@americanrestorationtech.com` | the real email address |
 | `1200 Placeholder Ave, Suite 4` | the real street address |
-| `MHIC #000000` / `VA #0000000000` | the real licence numbers |
+| `NJ HIC #13VH00000000` | the real NJ Home Improvement Contractor registration |
 | `Placeholder Name` | real customer names on the reviews |
 | `www.americanrestorationtech.com` | the real domain |
 

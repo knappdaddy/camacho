@@ -163,7 +163,7 @@ Fine for a draft. Two things to be careful about:
 
 - **Don't present generated images as his completed jobs.** A portfolio is a
   claim about work you actually did. Generated before/afters captioned
-  "Bethesda, MD — six weeks" are fabricated credentials, and it's the same
+  "Montclair, NJ — six weeks" are fabricated credentials, and it's the same
   problem as the placeholder reviews currently on the site. Use them to hold the
   layout while the real photos get shot, not to fill the gallery permanently.
 - **Six fingers, melted railings, impossible stair geometry.** Check every image
