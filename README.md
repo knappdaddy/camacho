@@ -295,3 +295,35 @@ for a new project, copy the nearest `scene_*` function and add a row to
 - [ ] Domain updated in canonical tags, `sitemap.xml` and `robots.txt`
 - [ ] Checked on a real phone, not just a resized browser window
 - [ ] Google Business Profile claimed and linked
+
+---
+
+## Alternate themes (preview only)
+
+Two alternative visual directions live alongside the site and can be compared
+without disturbing it:
+
+| | Direction | Type | Palette |
+|---|---|---|---|
+| **A** | current | Archivo + Inter | charcoal, orange |
+| **B** | Signwriter — hand-painted trade signage | Fraunces + Karla | bone paper, oxblood, brass |
+| **C** | Field Notes — drafting table | Familjen Grotesk + DM Mono | graph-paper grey, blueprint ink, red lead |
+
+- <https://knappdaddy.github.io/camacho/theme-b/>
+- <https://knappdaddy.github.io/camacho/theme-c/>
+
+Each carries its own logo and favicon, and a bar at the top of the page
+switches between all three on whichever page you're on.
+
+The themes share the site's markup, JavaScript, photographs and fonts — only
+the stylesheet and the logo differ. Each `theme-*/theme.css` is the base
+stylesheet with an override block appended, so any change to the real site
+flows into both when they are rebuilt:
+
+```bash
+python3 tools/stamp-build.py && python3 tools/make-themes.py
+```
+
+The override blocks are `tools/themes/b.css` and `tools/themes/c.css`. To adopt
+a theme for real, fold its override into `assets/css/styles.css`, swap the logo
+references, and delete the `theme-*` directories and the `.theme-switch` markup.

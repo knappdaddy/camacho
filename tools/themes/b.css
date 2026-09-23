@@ -1,0 +1,202 @@
+/* ==========================================================================
+   THEME B — "Signwriter"
+   Hand-painted trade signage: enamel shop plates, gilded keylines, slab
+   serifs, letterpress. Warm bone paper instead of grey; oxblood and brass
+   instead of charcoal and orange; square corners and hard offset shadows
+   instead of pills and soft blurs.
+   ========================================================================== */
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url("../assets/fonts/fraunces-variable.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../assets/fonts/karla-variable.woff2") format("woff2");
+}
+
+:root {
+  --accent:        #8C2F1D;   /* oxblood */
+  --accent-bright: #B8452C;
+  --accent-deep:   #6B2215;
+  --brass:         #C99A48;
+
+  --ink-900: #14110D;
+  --ink-800: #1D1913;
+  --ink-700: #2A241B;
+  --ink-600: #3A3227;
+  --ink-500: #4C4234;
+
+  --paper:   #F4EEE2;
+  --paper-2: #E9E0CE;
+  --paper-3: #DACFB8;
+
+  --text:       #1C1710;
+  --text-muted: #6A5B49;
+  --text-invert-muted: rgba(244, 238, 226, 0.70);
+
+  --line:      #D3C6AC;
+  --line-dark: rgba(244, 238, 226, 0.20);
+
+  --font-sans: "Karla", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+
+  /* Sign plates have corners, not pills. */
+  --r-sm: 1px; --r-md: 2px; --r-lg: 3px; --r-xl: 4px;
+
+  --shadow-sm: 2px 2px 0 rgba(20, 17, 13, 0.10);
+  --shadow-md: 3px 3px 0 rgba(20, 17, 13, 0.14);
+  --shadow-lg: 5px 5px 0 rgba(20, 17, 13, 0.18);
+}
+
+/* Paper grain over the whole page — the single biggest tell that a human
+   chose the surface rather than a framework default. */
+body::after {
+  content: ""; position: fixed; inset: 0; z-index: 400; pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: -0.012em;
+  font-variation-settings: "SOFT" 30, "WONK" 1;
+}
+h1, h2 { font-weight: 700; }
+.hero h1 em { color: var(--brass); font-style: italic; }
+
+/* Labels are engraved, not tagged. */
+.eyebrow {
+  font-family: var(--font-display);
+  font-weight: 600; font-style: italic;
+  font-size: 0.875rem; letter-spacing: 0.02em;
+  text-transform: none; color: var(--accent);
+}
+.section--dark .eyebrow, .hero .eyebrow, .band .eyebrow, .cta-band .eyebrow,
+.page-head .eyebrow { color: var(--brass); }
+.eyebrow::before { background: currentColor; width: 34px; height: 1px; }
+
+/* Buttons: painted plates with a hard drop, not soft capsules. */
+.btn {
+  border-radius: 2px;
+  border: 1.5px solid var(--ink-900);
+  font-family: var(--font-sans);
+  font-weight: 700; letter-spacing: 0.01em;
+  box-shadow: 3px 3px 0 var(--ink-900);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.15s ease;
+}
+.btn:hover { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--ink-900); }
+.btn:active { transform: translate(3px, 3px); box-shadow: none; }
+.btn--ghost { border-color: var(--ink-900); box-shadow: 3px 3px 0 var(--ink-900); }
+.btn--ghost:hover { background: var(--paper-2); box-shadow: 1px 1px 0 var(--ink-900); }
+.btn--ghost-invert { border-color: var(--paper); box-shadow: 3px 3px 0 var(--paper); }
+.btn--ghost-invert:hover { box-shadow: 1px 1px 0 var(--paper); }
+.btn--dark { box-shadow: 3px 3px 0 var(--accent); }
+.btn--dark:hover { box-shadow: 1px 1px 0 var(--accent); }
+
+/* Badges: enamel tags with a keyline. */
+.badge {
+  border-radius: 2px;
+  background: rgba(244, 238, 226, 0.10);
+  border: 1px solid rgba(244, 238, 226, 0.34);
+  backdrop-filter: none; -webkit-backdrop-filter: none;
+  font-weight: 600;
+}
+.badge svg { color: var(--brass); }
+
+.nav__link { border-radius: 2px; font-weight: 600; }
+.nav__link[aria-current="page"] { color: var(--accent); }
+.nav__call { border-radius: 2px; border: 1.5px solid var(--ink-900); box-shadow: 2px 2px 0 var(--ink-900); }
+.nav__toggle { border-radius: 2px; border-color: var(--ink-900); border-width: 1.5px; }
+.brand__name { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.01em; }
+.brand__tag { font-family: var(--font-sans); letter-spacing: 0.18em; color: var(--text-muted); }
+.brand img { border-radius: 50%; }
+
+.site-header { border-bottom: 1.5px solid var(--ink-900); background: var(--paper); backdrop-filter: none; }
+.site-header.is-stuck { box-shadow: 0 2px 0 rgba(20, 17, 13, 0.12); }
+.topbar { background: var(--ink-900); }
+
+/* Plates, not cards. */
+.tile, .svc__media, .quote, .contact-panel, .figure img, .compare,
+.showcase .compare, .split__media {
+  border-radius: 2px;
+}
+.tile { border: 1.5px solid var(--ink-900); box-shadow: 4px 4px 0 rgba(20, 17, 13, 0.18); }
+.tile h3 { font-family: var(--font-display); }
+.quote { border: 1.5px solid var(--ink-900); box-shadow: 4px 4px 0 rgba(20, 17, 13, 0.10); }
+.quote blockquote { font-family: var(--font-display); font-size: 1.125rem; font-style: italic; line-height: 1.55; }
+.quote__avatar { border-radius: 50%; background: var(--accent); color: var(--paper); }
+.quote__stars { color: var(--brass); }
+
+.svc__media { border: 1.5px solid var(--ink-900); }
+.compare, .showcase .compare { border: 1.5px solid var(--ink-900); box-shadow: 5px 5px 0 rgba(20, 17, 13, 0.20); }
+.compare__tag, .compare.is-split .compare__pane::after {
+  border-radius: 2px; font-family: var(--font-sans); letter-spacing: 0.12em;
+  background: var(--ink-900); border-color: var(--brass);
+}
+.compare-toggle { border-radius: 2px; border: 1.5px solid var(--ink-900); }
+.compare-toggle button { border-radius: 1px; font-weight: 700; }
+.compare-toggle button[aria-pressed="true"] { background: var(--accent); color: var(--paper); box-shadow: none; opacity: 1; }
+
+.filter { border-radius: 2px; border: 1.5px solid var(--ink-900); font-weight: 700; }
+.filter[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); }
+
+.stat b { font-family: var(--font-display); font-weight: 900; }
+.stat b span { color: var(--brass); }
+.project__cat { font-family: var(--font-sans); color: var(--accent); letter-spacing: 0.12em; }
+.steplist li::before { font-family: var(--font-display); font-style: italic; font-size: 1rem; }
+.steplist b { font-family: var(--font-display); }
+
+.faq summary { font-family: var(--font-display); }
+.faq summary::after { color: var(--accent); }
+.field input, .field select, .field textarea { border-radius: 2px; border-width: 1.5px; border-color: var(--ink-900); background: var(--paper); }
+.field input:focus, .field select:focus, .field textarea:focus { box-shadow: 3px 3px 0 var(--accent); border-color: var(--ink-900); }
+.field label { font-weight: 700; }
+
+/* Warm the scrims so photographs sit on the same paper as everything else. */
+.hero__media::after {
+  background:
+    linear-gradient(100deg, rgba(20, 17, 13, 0.95) 0%, rgba(20, 17, 13, 0.91) 32%,
+                    rgba(20, 17, 13, 0.80) 54%, rgba(20, 17, 13, 0.26) 80%,
+                    rgba(20, 17, 13, 0.06) 100%),
+    linear-gradient(0deg, rgba(20, 17, 13, 0.48) 0%, rgba(20, 17, 13, 0) 38%);
+}
+.page-head__media::after {
+  background:
+    linear-gradient(100deg, rgba(20, 17, 13, 0.94) 0%, rgba(20, 17, 13, 0.89) 34%,
+                    rgba(20, 17, 13, 0.76) 56%, rgba(20, 17, 13, 0.24) 82%,
+                    rgba(20, 17, 13, 0.08) 100%),
+    linear-gradient(0deg, rgba(20, 17, 13, 0.40) 0%, rgba(20, 17, 13, 0) 58%);
+}
+.band__media::after {
+  background: linear-gradient(98deg, rgba(20, 17, 13, 0.92) 0%, rgba(20, 17, 13, 0.74) 42%, rgba(20, 17, 13, 0.30) 100%);
+}
+.cta-band__media::after {
+  background:
+    linear-gradient(100deg, rgba(20, 17, 13, 0.93) 0%, rgba(20, 17, 13, 0.78) 40%, rgba(20, 17, 13, 0.36) 100%),
+    radial-gradient(ellipse at 18% 120%, rgba(201, 154, 72, 0.26), transparent 62%);
+}
+.band--center .band__media::after {
+  background: linear-gradient(180deg, rgba(20, 17, 13, 0.84), rgba(20, 17, 13, 0.90));
+}
+@media (max-width: 899px) {
+  .hero__media::after, .page-head__media::after, .band__media::after {
+    background: linear-gradient(180deg, rgba(20, 17, 13, 0.80) 0%, rgba(20, 17, 13, 0.87) 55%, rgba(20, 17, 13, 0.92) 100%);
+  }
+  .cta-band__media::after {
+    background: linear-gradient(180deg, rgba(20, 17, 13, 0.84), rgba(20, 17, 13, 0.91));
+  }
+}
+
+/* A ruled line between sections, like a printed page. */
+.section--paper2 { border-block: 1.5px solid var(--ink-900); }
+.callbar a { font-weight: 700; }
+.callbar__call { background: var(--accent); }
+.site-footer { border-top: 2px solid var(--brass); }
+.notice { border-style: solid; border-color: var(--brass); background: rgba(201, 154, 72, 0.12); }
+.notice b { color: var(--brass); }
