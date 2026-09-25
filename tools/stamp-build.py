@@ -32,10 +32,11 @@ version = now.strftime("%Y%m%d-%H%M")
 STAMP = re.compile(r'<span data-build>[^<]*</span>')
 MARKER = "(class <code>notice</code>) when the real content is in."
 # href/src pointing at assets/css, assets/js or assets/img — not assets/fonts.
-ASSET = re.compile(r'((?:href|src)=")(assets/(?:css|js|img)/[^"?]+)(?:\?v=[^"]*)?(")')
+ASSET = re.compile(r'((?:href|src)=")((?:\.\./)?assets/(?:css|js|img)/[^"?]+|d\.(?:css|js))(?:\?v=[^"]*)?(")')
 
 changed = 0
-for page in sorted(ROOT.glob("*.html")):
+PAGES = sorted(ROOT.glob("*.html")) + sorted((ROOT / "theme-d").glob("*.html"))
+for page in PAGES:
     original = page.read_text()
     t = ASSET.sub(rf'\1\2?v={version}\3', original)
 
@@ -50,6 +51,6 @@ for page in sorted(ROOT.glob("*.html")):
         page.write_text(t)
         changed += 1
 
-busted = sum(len(ASSET.findall(p.read_text())) for p in ROOT.glob("*.html"))
+busted = sum(len(ASSET.findall(p.read_text())) for p in PAGES)
 print(f"Stamped {changed} page(s) as {human}")
 print(f"Cache-busted {busted} asset reference(s) with ?v={version}")

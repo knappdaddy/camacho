@@ -32,7 +32,8 @@ THEMES = {
         "logo": "logo-c", "favicon": "favicon-c", "chrome": "#0B1620",
     },
 }
-ORDER = [("", "A · Original"), ("theme-b", "B · Signwriter"), ("theme-c", "C · Field Notes")]
+ORDER = [("", "A · Original"), ("theme-b", "B · Signwriter"), ("theme-c", "C · Field Notes"),
+         ("theme-d", "D · Editorial")]
 
 
 def switcher(current, page):
